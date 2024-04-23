@@ -63,7 +63,8 @@ header > h1{
 
 .slider-css {
     width: 100%;
-    height: auto;
+    height: 1250px;
+
     margin: 50px auto 0;
     overflow: hidden;
 
@@ -102,3 +103,44 @@ header > h1{
 }
 
 /* FIN SLIDE INDEX */
+
+/*aside*/
+
+aside{
+    background-color: #ddd3cc;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    flex-direction: column;
+}
+
+/* Footer Style*/
+
+footer{
+    
+    background-color: #ede7e2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:100px;
+}
+.footer-section, #payMethod{
+    
+    height: 300px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.footer-section > a{
+    text-decoration: none;
+    color: black;
+}
+.footer-section{
+    border-right: 1px solid black;
+
+}
