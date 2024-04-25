@@ -4,63 +4,6 @@
     font-family: lato;
 }
 
-/* ICONS */
-
-.icon {
-    width: 30px;
-    height: 30px;
-}
-/* SLIDE INDEX CORREGIR Q SE VUELVE LOCO */
-
-/*Estilizacion del header*/
-header{
-    background-color: #ddd3cc;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    padding-left: 10px;
-}
-header > h1{
-    
-    margin-left: 200px;
-}
-#rightheader{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    padding-right: 30px;
-    padding-left: 2px;
-}
-
-#searchBar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px;
-
-    background-color: transparent;
-    color: black;
-    
-    padding-right:20px ;
-    
-}
-#seachBar, input{
-   background-color: transparent;
-    border: none;
-    border-bottom: 1px solid black;
-    padding-left: 10px;
-    
-    
-
-}
-#seachBar, input:focus{
-    outline: none;
-    padding-left: 10px;
-
-}
-
 .slider-css {
     width: 100%;
     height: 1250px;
@@ -103,44 +46,3 @@ header > h1{
 }
 
 /* FIN SLIDE INDEX */
-
-/*aside*/
-
-aside{
-    background-color: #ddd3cc;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    flex-direction: column;
-}
-
-/* Footer Style*/
-
-footer{
-    
-    background-color: #ede7e2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:100px;
-}
-.footer-section, #payMethod{
-    
-    height: 300px;
-    width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-.footer-section > a{
-    text-decoration: none;
-    color: black;
-}
-.footer-section{
-    border-right: 1px solid black;
-
-}

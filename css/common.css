@@ -1,0 +1,96 @@
+/* ICONS */
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+/*Estilizacion del header*/
+header{
+    background-color: #ddd3cc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding-left: 10px;
+}
+header > a {
+    color: black;
+    text-decoration: none;
+    margin-left: 270px;
+}
+#rightheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding-right: 30px;
+    padding-left: 2px;
+}
+
+#searchBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+
+    background-color: transparent;
+    color: black;
+    
+    padding-right:20px ;
+    
+}
+#seachBar, input{
+   background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+}
+#seachBar, input:focus{
+    outline: none;
+    padding-left: 10px;
+
+}
+/*aside*/
+
+aside{
+    background-color: #ddd3cc;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    flex-direction: column;
+}
+
+/* Footer Style*/
+
+footer{
+    
+    background-color: #ede7e2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:100px;
+}
+.footer-section, #payMethod{
+    
+    height: 300px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.footer-section > a{
+    text-decoration: none;
+    color: black;
+}
+.footer-section{
+    border-right: 1px solid black;
+
+}
+.payments-methods {
+    width: 50px;
+    height: auto;
+}
