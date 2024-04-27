@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Imágen principal y descripción */
+.producto-principal {
+    padding-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 200px;
+    grid-auto-flow: column;
+    margin-bottom: 50px;
+}
+
+.foto-principal {
+    width: 500px;
+    height: auto;
+    display: inline-block;
+}
+
+.producto-principal-descripcion {
+    width: 500px;
+    height: auto;
+    display: inline-block;
+}
+
+#nombre-mueble {
+    margin-bottom: 0;
+    width: fit-content;
+    float: left;
+}
+
+#referencia {
+    font-size: 12px;
+    margin: 0px 0px 0px 0px;
+    width: fit-content;
+    clear: left;
+}
+
+#precio {
+    width: fit-content;
+    float: left;
+    margin: 10px 0px 0px 0px;
+}
+
+#iva {
+    width: fit-content;
+    font-size: 10px;
+    float: left;
+    margin: 17px 0px 0px 5px;
+}
+
+#corazon {
+    width: 30px;
+    height: auto;
+    clear: right;
+    margin: 6px 0px 0px 350px;
+}
+
+.colores {
+    border-top: 1px solid black;
+    margin-bottom: 1.12em;
+}
+
+h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#color {
+    background-color: #C59769;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+#color:hover {
+    background-color: #C59769;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 2px solid lightgrey;
+}
+
+.descripcion {
+    border-top: 1px solid black;
+}
+
+.contador-unidades {
+    border-top: 1px solid black;
+}
+
+#anyadir-carrito {
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #EAD8C0; 
+}
+
+#anyadir-carrito:hover {
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ddd3cc; 
+}
+
+/* Imágenes secundarias */
+#imagenes-secundarias {
+    border-top: 1px solid black;
+    padding-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 150px;
+    grid-auto-flow: column;
+    margin-bottom: 50px;
+}
+
+.imagenes-secundarias {
+    width: 300px;
+    transition: all 300ms;
+    position: relative;
+}
+
+.imagenes-secundarias:hover {
+    transform: scale(1.15);
+}
+
