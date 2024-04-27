@@ -1,4 +1,9 @@
 /* ICONS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+}
 
 .icon {
     width: 30px;
@@ -58,7 +63,7 @@ aside{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 150px;
     flex-direction: column;
 }
 
@@ -71,26 +76,80 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding:100px;
+    flex-wrap: wrap;
+    height: auto;
 }
-.footer-section, #payMethod{
+
+.footer-section{
     
     height: 300px;
-    width: 400px;
+    width: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     
 }
-.footer-section > a{
+/*Para quitarle el color y estilos a los enlaces (tambien a los de las redes sociales)*/
+.footer-section > a, .footer-section > div> a{
     text-decoration: none;
     color: black;
 }
 .footer-section{
-    border-right: 1px solid black;
+    width: 500px;
+    margin-bottom: 50px;
 
 }
+
+/*En vez de que cada uno tenga bordes, que solo el central tenga en la derecha
+y en la izquierda*/
+
+.footer-section:nth-child(2){
+    border-right: 1px solid black;
+    border-left:1px solid black ;
+
+}
+
+/*Chorizaco de codigo que se encarga enteramente de colocar los metodos de pago abajo*/
+
+#payMethodContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex: 1;
+    width: 100%;
+    height: auto;
+
+}
+
+#payMethodContainer > h3{
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: auto;
+    left: 51.5%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid ;
+}
+
 .payments-methods {
+    
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
     width: 50px;
     height: auto;
+    margin-top: 100px;
+}
+/*Aqui termina*/
+
+/*Bajar el copyright*/
+#legal{
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
 }

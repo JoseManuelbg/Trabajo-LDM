@@ -25,13 +25,15 @@
         </div>
     </header>
     <!--Primera seccion-->
+
     <section>
-        <div>
-            <h1>DICOMO</h1>
-            <h2>Di como quieres tu mueble</h2>
-            <a href="./categories.html"><button>Nuestros muebles</button></a>
-        </div>
+        
         <div class="slider-css">
+            <div id="titleC">
+                <h1>DICOMO</h1>
+                <h2>Di como quieres tu mueble</h2>
+                <a href="./categories.html"><button>Nuestros muebles</button></a>
+            </div>
             <ul>
                 <li><img src="../img/carrusel/1.png" alt=""></li>
                 <li><img src="../img/carrusel/2.png" alt=""></li>
@@ -40,33 +42,36 @@
             </ul>
         </div>
     </section>
-    <section>
-        <article>
+
+    <!--Carruseles de productos-->
+    <div id="carruseles">
+        <article class="carouselP">
+            <p>Info de los carruseles</p>
+        </article>
+        
+        <article class="carouselP">
+            <p>Info de los carruseles</p>
 
         </article>
-        <hr>
-        <article>
-
-        </article>
-    </section>
+    </div>
+    <!--Spam innecesario-->
     <aside>
         <h3>¡Únete a nuestro curso de restauración!</h3><br>
         <h3>Y disfruta de un 10% de descuento</h3> <!-- Hacer que el 10% sea una variable JS para poderlo cambiar en todas las páginas a la vez -->
         <button>¡Únete aquí!</button>
     </aside>
+    <!--Fin del spam-->
     <footer>
         <div class="footer-section">
             <h3>CONTACTO</h3>
             <a href="mailto:dicomo@gmail.com">dicomo@gmail.com</a>
         </div>
-        <div class="footer-separator"></div>
         <div class="footer-section">
             <h3>¿QUIÉNES SOMOS?</h3>
             <a href="./aboutUs.html">¿Quiénes somos?</a>
             <a href="./legalNotice.html">Aviso Legal</a>
             <a href="./affiliates.html">Afiliados</a>
         </div>        
-        <div class="footer-separator"></div>
         <div class="footer-section">
             <h3>COMUNIDAD</h3>
             <div>
@@ -77,8 +82,9 @@
                 <a href="https://www.instagram.com/"><img src="../img/simbolos/bxl-instagram.svg" alt="Logo Instagram"></a>
                 <a href=""><p>Instagram</p></a>
             </div>
+        
         </div>
-        <div>
+        <div id="payMethodContainer">
             <h3>MÉTODOS DE PAGO</h3>
             <img src="../img/simbolos/LogoApplePay.png" alt="Logo ApplePay" class="payments-methods">
             <img src="../img/simbolos/LogoGooglePay.png" alt="Logo GooglePay" class="payments-methods">
@@ -86,7 +92,7 @@
             <img src="../img/simbolos/LogoPayPal.png" alt="Logo PayPal" class="payments-methods">
             <img src="../img/simbolos/LogoVisa.png" alt="Logo VISA" class="payments-methods">
         </div>
-        <p>&copy; DICOMO · All rights reserved</p>
+        <p id="legal">&copy; DICOMO · All rights reserved</p>
     </footer>
 </body>
 </html>
