@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aparador en Madera de Mango Baty</title> <!--Cambiar titulo de página-->
+    <!-- Hojas de estilos -->
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/productos.css">
+    <!-- Favicon -->
     <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- Scripts -->
     <script src="../../js/productos.js"></script>
 </head>
 
@@ -35,18 +42,18 @@
         
         <div class="producto-principal-descripcion">
             <div>
-                <h3 id="nombre-mueble">Aparador en Madera de Mango Baty</h3>
+                <h3 id="nombre-mueble" class="oswald-titulos">Aparador en Madera de Mango Baty</h3>
                 <p id="referencia">Referencia: AP0001</p>
                 <p id="precio">379,95€</p>
                 <p id="iva">IVA Incluido</p>
                 <img src="../../img/simbolos/Corazon_hueco.png" alt="" id="corazon">
         </div>
             <div class="colores">
-                <h4>Colores</h4>
+                <h4 class="oswald-titulos">Colores</h4>
                 <img src="../../img/Fotos Productos/Aparadores/Aparador1/color.webp" alt="" id="color">
             </div>
             <div class="descripcion">
-                <h4>Descripción</h4>
+                <h4 class="oswald-titulos">Descripción</h4>
                 <p id="descripcion">
                     La colección Baty es el conjunto de muebles perfecto para vestir tu casa, están fabricados a mano
                     por maestros artesanos en madera de mango que se caracteriza por su estilo y personalidad. El
@@ -80,41 +87,51 @@
             <img src="" alt="" class="imagenes-secundarias">
         </div>
     </section>
+    <!--Spam innecesario-->
+    <aside>
+        <h3>¡Únete a nuestro curso de restauración!</h3><br>
+        <h3>Y disfruta de un 10% de descuento</h3> <!-- Hacer que el 10% sea una variable JS para poderlo cambiar en todas las páginas a la vez -->
+        <button>¡Únete aquí!</button>
+    </aside>
+    <!--Fin del spam-->
     <!-- Footer -->
     <footer>
+        <div class="columnas-footer">
         <div class="footer-section">
             <h3>CONTACTO</h3>
             <a href="mailto:dicomo@gmail.com">dicomo@gmail.com</a>
         </div>
-        <div class="footer-separator"></div>
         <div class="footer-section">
             <h3>¿QUIÉNES SOMOS?</h3>
             <a href="./aboutUs.html">¿Quiénes somos?</a>
             <a href="./legalNotice.html">Aviso Legal</a>
             <a href="./affiliates.html">Afiliados</a>
         </div>        
-        <div class="footer-separator"></div>
         <div class="footer-section">
             <h3>COMUNIDAD</h3>
-            <div>
+            <div class="red-social">
                 <a href="https://www.facebook.com/"><img src="../../img/simbolos/bxl-facebook.svg" alt="Logo Facebook"></a>
-                <a href="https://www.facebook.com/"><p>Facebook</p></a>
+                <a href="https://www.facebook.com/" class="nombre-red-social">Facebook</a>
             </div>
-            <div>
+            <div class="red-social">
                 <a href="https://www.instagram.com/"><img src="../../img/simbolos/bxl-instagram.svg" alt="Logo Instagram"></a>
-                <a href=""><p>Instagram</p></a>
+                <a href="" class="nombre-red-social">Instagram</a>
             </div>
+        
         </div>
-        <div>
-            <h3>MÉTODOS DE PAGO</h3>
+        </div>
+        <div id="titulo-metodos-pago">
+        <h3>MÉTODOS DE PAGO</h3>
+        </div>
+        <div id="payMethodContainer">
             <img src="../../img/simbolos/LogoApplePay.png" alt="Logo ApplePay" class="payments-methods">
             <img src="../../img/simbolos/LogoGooglePay.png" alt="Logo GooglePay" class="payments-methods">
             <img src="../../img/simbolos/Mastercard-logo.svg.png" alt="Logo MasterCard" class="payments-methods"> 
             <img src="../../img/simbolos/LogoPayPal.png" alt="Logo PayPal" class="payments-methods">
             <img src="../../img/simbolos/LogoVisa.png" alt="Logo VISA" class="payments-methods">
         </div>
-        <p>&copy; DICOMO · All rights reserved</p>
-    </footer>  
+        <p id="legal">&copy; DICOMO · All rights reserved</p>
+    </footer> 
 </body>
 
 </html>

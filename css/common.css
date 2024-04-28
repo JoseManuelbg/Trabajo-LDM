@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: lato;
+    scrollbar-width: none;
 }
 
 .icon {
@@ -72,18 +73,24 @@ aside{
 footer{
     
     background-color: #ede7e2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:100px;
-    flex-wrap: wrap;
     height: auto;
+}
+
+.columnas-footer {
+    padding-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 0px;
+    grid-auto-flow: column;
+
 }
 
 .footer-section{
     
-    height: 300px;
-    width: 450px;
+    height: 150px;
+    width: 500px;
+    margin-bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,11 +102,7 @@ footer{
     text-decoration: none;
     color: black;
 }
-.footer-section{
-    width: 500px;
-    margin-bottom: 50px;
 
-}
 
 /*En vez de que cada uno tenga bordes, que solo el central tenga en la derecha
 y en la izquierda*/
@@ -113,37 +116,29 @@ y en la izquierda*/
 /*Chorizaco de codigo que se encarga enteramente de colocar los metodos de pago abajo*/
 
 #payMethodContainer{
-    position: relative;
-    display: flex;
+    padding-top: 25px;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    flex: 1;
-    width: 100%;
-    height: auto;
+    align-content: center;
+    gap: 300px;
+    grid-auto-flow: column;
 
 }
 
-#payMethodContainer > h3{
-    font-size: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    width: auto;
-    left: 51.5%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-    border-bottom: 1px solid ;
+#payMethodContainer > img {
+    width: 70px;
+    height: auto;
 }
 
-.payments-methods {
-    
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-    width: 50px;
-    height: auto;
-    margin-top: 100px;
+#titulo-metodos-pago{
+    border-bottom: 1px solid black;
+    margin: 0px 150px 0px 150px;
+    font-size: 20px;
+}
+
+footer > p {
+    margin-top: 20px;
+    justify-content: center;
 }
 /*Aqui termina*/
 
@@ -152,4 +147,29 @@ y en la izquierda*/
     flex-wrap: wrap;
     display: flex;
     width: 100%;
+}
+
+aside > button {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+}
+
+aside > button:hover{ 
+    background-color: #ede7e2;
+}
+
+.red-social {
+    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+    grid-auto-flow: column;
+}
+
+.nombre-red-social {
+    margin-top: 4px;
 }
