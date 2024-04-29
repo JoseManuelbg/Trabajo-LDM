@@ -182,3 +182,36 @@ h4 {
   font-style: normal;
   font-size: 16px;
 }
+/*Modal box*/
+.container .popup-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.container .popup-image span {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.container .popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius:5px ;
+    width: 750px;
+    object-fit: cover;
+}
