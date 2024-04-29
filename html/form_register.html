@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/form-style.css"> <!-- Enlazamos archivo de css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Importamos fuente Roboto (Grosor 400 y 700) [líneas: 8,9,10] -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"> <!-- Insertamos algunos iconos desde 'boxicons' (Instagram, Facebook y Google)-->
+    <title>Formulario Sign-in Sign-up</title>
+</head>
+<body>
+    <header>
+        <img src="../img/simbolos/Menu_hamburguesa.png" alt="Simbolo menú" class="icon">
+        <a href="./index.html"><h1>DiComo</h1></a>
+        <div id="rightheader">
+            <div id="searchBar">
+            <input type="text">
+            <img src="../img/simbolos/Lupa_busqueda.png" alt="Simbolo lupa" class="icon">
+            </div>
+            <a href="./login.html"><img src="../img/simbolos/User.png" alt="Simbolo usuario" class="icon"></a>
+            <a href="./sCart.html"><img src="../img/simbolos/Carrito.png" alt="Simbolo carrito de compra" class="icon"></a>
+        </div>
+    </header>
+
+    <div class="container sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a Dcomo</h2>
+                <p>Si ya tienes una cuenta podrás iniciar sesión aquí.</p>
+                <button class="sign-up-btn">Iniciar Sesión</button>
+            </div>
+        </div>
+        <form class="Formulario">
+            <h2 class="create-account">Crea una cuenta usando:</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-google-plus' ></i>
+                </div>
+            </div>
+            <p class="cuenta">Crea una cuenta</p>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Constraseña">
+            <input type="button" value="Registrarse">
+            
+        </form> 
+    </div>
+    <div class="container sign-in">
+        <form class="Formulario">
+            <h2 class="create-account">Iniciar Sesión usando:</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-google-plus' ></i>
+                </div>
+            </div>
+            <p class="cuenta">Accede con tu e-mail y contraseña:</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Constraseña">
+            <input type="button" value="Iniciar Sesion">
+        </form> 
+        <div class="whelcome-back">
+            <div class="message">
+                <h2>Bienvenide</h2>
+                <p>Si aún no tienes una cuenta podrás registrarte aquí.</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../js/form-script.js"></script>
+
+    <aside>
+        <h3>¡Únete a nuestro curso de restauración!</h3><br>
+        <h3>Y disfruta de un 10% de descuento</h3> <!-- Hacer que el 10% sea una variable JS para poderlo cambiar en todas las páginas a la vez -->
+        <button>¡Únete aquí!</button>
+    </aside>
+    <!--Fin del spam-->
+    <!-- Footer -->
+    <footer>
+        <div class="columnas-footer">
+        <div class="footer-section">
+            <h3>CONTACTO</h3>
+            <a href="mailto:dicomo@gmail.com">dicomo@gmail.com</a>
+        </div>
+        <div class="footer-section">
+            <h3>¿QUIÉNES SOMOS?</h3>
+            <a href="./aboutUs.html">¿Quiénes somos?</a>
+            <a href="./legalNotice.html">Aviso Legal</a>
+            <a href="./affiliates.html">Afiliados</a>
+        </div>        
+        <div class="footer-section">
+            <h3>COMUNIDAD</h3>
+            <div class="red-social">
+                <a href="https://www.facebook.com/"><img src="../img/simbolos/bxl-facebook.svg" alt="Logo Facebook"></a>
+                <a href="https://www.facebook.com/" class="nombre-red-social">Facebook</a>
+            </div>
+            <div class="red-social">
+                <a href="https://www.instagram.com/"><img src="../img/simbolos/bxl-instagram.svg" alt="Logo Instagram"></a>
+                <a href="" class="nombre-red-social">Instagram</a>
+            </div>
+        
+        </div>
+        </div>
+        <div id="titulo-metodos-pago">
+        <h3>MÉTODOS DE PAGO</h3>
+        </div>
+        <div id="payMethodContainer">
+            <img src="../img/simbolos/LogoApplePay.png" alt="Logo ApplePay" class="payments-methods">
+            <img src="../img/simbolos/LogoGooglePay.png" alt="Logo GooglePay" class="payments-methods">
+            <img src="../img/simbolos/Mastercard-logo.svg.png" alt="Logo MasterCard" class="payments-methods"> 
+            <img src="../img/simbolos/LogoPayPal.png" alt="Logo PayPal" class="payments-methods">
+            <img src="../img/simbolos/LogoVisa.png" alt="Logo VISA" class="payments-methods">
+        </div>
+        <p id="legal">&copy; DICOMO · All rights reserved</p>
+    </footer>
+</body>
+</html>

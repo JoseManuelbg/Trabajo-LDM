@@ -1,0 +1,152 @@
+body {
+    background-color: #FFF2E1;
+}
+
+#logo {
+    margin-top: 50px;
+    width: 350px;
+    height: auto;
+}
+
+#titulo-pagina {
+    border-bottom: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 30px 0px 30px;
+}
+
+#titulo-pagina > h2 {
+    width: fit-content;
+}
+
+.informacion {
+    
+    width: 500px;
+}
+
+.formulario {
+    background-color: #ede7e2;
+    border: 1px solid #ddd3cc;
+    width: 500px;
+    height: auto;
+    box-shadow: -3px 3px 5px #ddd3cc;
+    margin-bottom: 50px;
+}
+
+section {
+    padding-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 100px;
+    grid-auto-flow: column;
+    margin: 0px 30px 0px 30px;
+    }
+
+.contacto, .oficina {
+    background-color: #ede7e2;
+    border: 1px solid #ddd3cc;
+    box-shadow: -3px 3px 5px #ddd3cc;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contacto > a {
+    text-decoration: none;
+    color: black;
+}
+
+#formulario {
+    
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    box-sizing: border-box;
+
+}
+
+#formulario > label {
+    text-align: left;
+    padding: 10px 0 0 0;
+}
+
+#nombre > input:not(input[type="submit"]), #apellido > input:not(input[type="submit"]),
+#email > input:not(input[type="submit"]), #telefono > input:not(input[type="submit"]),
+#asunto > input:not(input[type="submit"]) {
+    height: 30px;
+    padding: 0;
+    font-size: 20px;
+}
+
+#nombre > input:hover, #apellido > input:hover,
+#email > input:hover, #telefono > input:hover,
+#nombre > input:focus, #apellido > input:focus,
+#email > input:focus, #telefono > input:focus,
+#asunto > input:hover, #asunto > input:focus {
+    background-color: #ddd3cc;
+    height: 30px;
+}
+
+#nombre > input {
+    width: 175px;
+}
+
+#email > input {
+    float: left;
+    width: 300px;
+}
+
+#telefono > input {
+    width: 150px;
+}
+
+#nombre, #email, #asunto {
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+#apellido, #telefono {
+    margin-right: 10px;
+    margin-top: 10px;
+    float: right;
+}
+
+#asunto > input {
+    width: 480px;
+}
+
+#comentario {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+#comentario > textarea {
+    background-color: #ddd3cc;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#enviar {
+    clear: both;
+    margin: 21px 90px 0px 90px;
+    display: grid;
+}
+#enviar > input[type="submit"] {
+    border: 1px solid #ddd3cc;
+    text-align: center;
+    padding: 3px 4px 3px 4px;
+    border-radius: 5px;
+}
+
+#enviar > input[type="submit"]:hover {
+    background-color: #ddd3cc;
+}
+
+
+
