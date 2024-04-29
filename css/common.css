@@ -159,6 +159,9 @@ aside > button {
 
 aside > button:hover{ 
     background-color: #ede7e2;
+    transform: scale(1.2);
+    transition: all 400ms;
+    cursor: pointer;
 }
 
 .red-social {

@@ -35,6 +35,7 @@
                     class="icon"></a>
         </div>
     </header>
+    <!-- Fin header -->
     <section>
         <article class="producto-principal">
             <img src="../../img/Fotos Productos/Aparadores/Aparador1/FotoPrincipal Aparador1.webp" alt=""
@@ -46,7 +47,12 @@
                 <p id="referencia">Referencia: AP0001</p>
                 <p id="precio">379,95€</p>
                 <p id="iva">IVA Incluido</p>
-                <img src="../../img/simbolos/Corazon_hueco.png" alt="" id="corazon">
+                <button id="boton-corazon" onclick="cambiarCorazonAOscuro();">
+                    <img src="../../img/simbolos/Corazon_hueco.png" alt="" class="corazon" id="corazon-vacio" onclick="mostrarCorazon()">
+                </button>
+                <button id="boton-corazon-relleno" onclick="cambiarCorazonAClaro();">
+                    <img src="../../img/simbolos/Corazon_relleno.png" alt="" class="corazon" id="corazon-relleno">
+                </button>
         </div>
             <div class="colores">
                 <h4 class="oswald-titulos">Colores</h4>
