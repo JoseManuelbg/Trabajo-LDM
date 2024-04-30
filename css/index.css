@@ -1,0 +1,95 @@
+
+
+/*Estilos generales*/
+
+button{ /*Afecta a todos los botones del index*/
+    background-color: #ddd3cc;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+}
+/*Fin de estilos generales*/
+
+.slider-css {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider-css ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s  infinite  linear ;
+}
+
+.slider-css li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-css img {
+    width: 100%;
+}
+
+/*Estilo para que el contenedor del titulo este en el centro y transparente difuminado*/
+#titleC{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+/*Estilos especificos dentro del ID titulo para los diferentes titulos*/
+#titleC > h1{
+    font-size: 80px;
+}
+/*Estilos especificos dentro del ID titulo para los diferentes titulos*/
+
+#titleC > h2{
+    padding: 10px 0px 80px 0px;
+}
+
+#titleC > a > button{
+    margin-bottom: 50px;
+}
+
+
+
+
+/*Por pulir*/
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+/* FIN SLIDE INDEX */
+
+/*Estilo de las secciones de los carruseles*/
+#carruseles{ /*Contenedor principal*/
+    height: 100vh;
+    background-color: white;
+    border: 1px solid black;
+
+}
+
+.carouselP{
+    height: 50%;
+    border: 1px solid black;
+}

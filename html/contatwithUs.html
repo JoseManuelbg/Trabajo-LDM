@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacta con nosotros</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/contactwithUs.css">
+</head>
+<body>
+<!--Header y navBar-->
+<header>
+    <img src="../img/simbolos/Menu_hamburguesa.png" alt="Simbolo menú" class="icon">
+    <a href="./index.html"><h1>DiComo</h1></a>
+    <div id="rightheader">
+        <div id="searchBar">
+        <input type="text">
+        <img src="../img/simbolos/Lupa_busqueda.png" alt="Simbolo lupa" class="icon">
+        </div>
+        <a href="./login.html"><img src="../img/simbolos/User.png" alt="Simbolo usuario" class="icon"></a>
+        <a href="./sCart.html"><img src="../img/simbolos/Carrito.png" alt="Simbolo carrito de compra" class="icon"></a>
+    </div>
+</header>
+<div id="titulo-pagina">
+    <h2>Información de Contacto</h2>
+</div>
+
+
+<section>
+<div class="informacion">
+<div class="contacto">
+    <h4>Contacto:</h4>
+    <a href="tel:+34609336150">609336150</a>
+    <h4>E-mail:</h4>
+    <a href="mailto:dicomo@gmail.com">dicomo@gmail.com</a>
+    <h4>Horario de Atención al Cliente:</h4>
+    <p>Lunes-Viernes: 9.00-14.00/17.00-20.00</p>
+    <p>Sabado: 9.00-13.30</p>
+</div>
+
+<br>
+
+<div class="oficina">
+    <h4>Nuestra sede:</h4>
+    <p>C/Ganadería, 43</p>
+    <p>41440, Lora del Río, Sevilla</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d789.6773659213952!2d-5.548696392729311!3d37.65603402076029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1714241143344!5m2!1ses!2ses" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+<div id="logo">
+<img src="../img/Logo Dicomo.png" alt="" id="logo">
+</div>
+<div class="formulario">
+    <form action="index.html" method="post" id="formulario">
+        <div id="nombre">
+        <label>Nombre: </label><br>
+        <input type="text" name="ruser" required><br>
+        </div>
+        <div id="apellido">
+        <label>Apellidos: </label><br>
+        <input type="text" name="rapellido" required><br>
+        </div>
+        <div id="email">
+        <label>Email: </label><br>
+        <input type="email" name="remail" required><br>
+        </div>
+        <div id="telefono">
+        <label>Telefono:</label><br>
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
+        </div>
+        <div id="asunto">
+        <label>Asunto:</label><br>
+        <input type="text"><br>
+        </div>
+        <div id="comentario">
+        <label>Comentario o Mensaje:</label>
+        <textarea name="" id="" cols="48" rows="7"></textarea>
+        </div>
+        <div id="enviar">
+        <input type="submit" id="enviar">
+        </div>
+    </form>
+    
+
+</div>
+</section>
+ <!--Spam innecesario-->
+ <aside>
+    <h3>¡Únete a nuestro curso de restauración!</h3><br>
+    <h3>Y disfruta de un 10% de descuento</h3> <!-- Hacer que el 10% sea una variable JS para poderlo cambiar en todas las páginas a la vez -->
+    <button>¡Únete aquí!</button>
+</aside>
+<!--Fin del spam-->
+<!-- Footer -->
+<footer>
+    <div class="columnas-footer">
+    <div class="footer-section">
+        <h3>CONTACTO</h3>
+        <a href="mailto:dicomo@gmail.com">dicomo@gmail.com</a>
+    </div>
+    <div class="footer-section">
+        <h3>¿QUIÉNES SOMOS?</h3>
+        <a href="./aboutUs.html">¿Quiénes somos?</a>
+        <a href="./legalNotice.html">Aviso Legal</a>
+        <a href="./affiliates.html">Afiliados</a>
+    </div>        
+    <div class="footer-section">
+        <h3>COMUNIDAD</h3>
+        <div class="red-social">
+            <a href="https://www.facebook.com/"><img src="../img/simbolos/bxl-facebook.svg" alt="Logo Facebook"></a>
+            <a href="https://www.facebook.com/" class="nombre-red-social">Facebook</a>
+        </div>
+        <div class="red-social">
+            <a href="https://www.instagram.com/"><img src="../img/simbolos/bxl-instagram.svg" alt="Logo Instagram"></a>
+            <a href="" class="nombre-red-social">Instagram</a>
+        </div>
+    
+    </div>
+    </div>
+    <div id="titulo-metodos-pago">
+    <h3>MÉTODOS DE PAGO</h3>
+    </div>
+    <div id="payMethodContainer">
+        <img src="../img/simbolos/LogoApplePay.png" alt="Logo ApplePay" class="payments-methods">
+        <img src="../img/simbolos/LogoGooglePay.png" alt="Logo GooglePay" class="payments-methods">
+        <img src="../img/simbolos/Mastercard-logo.svg.png" alt="Logo MasterCard" class="payments-methods"> 
+        <img src="../img/simbolos/LogoPayPal.png" alt="Logo PayPal" class="payments-methods">
+        <img src="../img/simbolos/LogoVisa.png" alt="Logo VISA" class="payments-methods">
+    </div>
+    <p id="legal">&copy; DICOMO · All rights reserved</p>
+</footer>
+</body>
+</html>

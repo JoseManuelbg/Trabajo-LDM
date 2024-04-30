@@ -1,0 +1,178 @@
+/* ICONS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+    scrollbar-width: none;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+/*Estilizacion del header*/
+header{
+    background-color: #ddd3cc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding-left: 10px;
+}
+header > a {
+    color: black;
+    text-decoration: none;
+    margin-left: 270px;
+}
+#rightheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding-right: 30px;
+    padding-left: 2px;
+}
+
+#searchBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+
+    background-color: transparent;
+    color: black;
+    
+    padding-right:20px ;
+    
+}
+#seachBar, input{
+   background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+}
+#seachBar, input:focus{
+    outline: none;
+    padding-left: 10px;
+
+}
+/*aside*/
+
+aside{
+    background-color: #ddd3cc;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    flex-direction: column;
+}
+
+/* Footer Style*/
+
+footer{
+    
+    background-color: #ede7e2;
+    height: auto;
+}
+
+.columnas-footer {
+    padding-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 0px;
+    grid-auto-flow: column;
+
+}
+
+.footer-section{
+    
+    height: 150px;
+    width: 500px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+/*Para quitarle el color y estilos a los enlaces (tambien a los de las redes sociales)*/
+.footer-section > a, .footer-section > div> a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*En vez de que cada uno tenga bordes, que solo el central tenga en la derecha
+y en la izquierda*/
+
+.footer-section:nth-child(2){
+    border-right: 1px solid black;
+    border-left:1px solid black ;
+
+}
+
+/*Chorizaco de codigo que se encarga enteramente de colocar los metodos de pago abajo*/
+
+#payMethodContainer{
+    padding-top: 25px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 300px;
+    grid-auto-flow: column;
+
+}
+
+#payMethodContainer > img {
+    width: 70px;
+    height: auto;
+}
+
+#titulo-metodos-pago{
+    border-bottom: 1px solid black;
+    margin: 0px 150px 0px 150px;
+    font-size: 20px;
+}
+
+footer > p {
+    margin-top: 20px;
+    justify-content: center;
+}
+/*Aqui termina*/
+
+/*Bajar el copyright*/
+#legal{
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+}
+
+aside > button {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+}
+
+aside > button:hover{ 
+    background-color: #ede7e2;
+    transform: scale(1.2);
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+.red-social {
+    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+    grid-auto-flow: column;
+}
+
+.nombre-red-social {
+    margin-top: 4px;
+}
