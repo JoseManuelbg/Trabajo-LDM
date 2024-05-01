@@ -176,3 +176,47 @@ aside > button:hover{
 .nombre-red-social {
     margin-top: 4px;
 }
+
+/* Sidebar */
+
+#sidebar {
+    z-index: 100;
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    background-color: #ddd3cc;
+    border-right: 3px solid #D1BB9E;
+    left: -403px;
+    transition: all 700ms linear;
+}
+
+#sidebar ul li{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 10px;
+    list-style: none;
+    border-bottom: 1px solid #d1bb9e6c;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: all 1.5s;
+    padding-bottom: 25px;
+}
+
+#logo.animacion{
+    transform: rotate(360deg);
+}
+
+#logo.animacion:hover {
+    transform: scaleY(1.080);
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
