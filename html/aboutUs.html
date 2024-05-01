@@ -26,7 +26,7 @@
     <!-- Contenido principal -->
     <div class="aboutus1">
         <div id="img1">
-            <img src="../img/AboutUs/Foto SobreNosotros.webp" alt="Imagen1">
+            <img src="../img/aboutUs/Foto SobreNosotros.webp" alt="Imagen1">
         </div>
         <div class="texto">
             <h2>Una Tienda de Muebles Diferente</h2>
@@ -38,7 +38,7 @@
 
     <div class="aboutus2">
         <div id="img2">
-            <img src="../img/AboutUs/Foto SobreNosotros2.webp" alt="Imagen 2">
+            <img src="../img/aboutUs/Foto SobreNosotros2.webp" alt="Imagen 2">
         </div>
         <div class="texto">
             <h2>Nuestras Motivaciones</h2>
@@ -51,72 +51,66 @@
     
     <!-- Cifras actuales -->
     <div class="aboutus3">  
-        <section class="section"></section>
-            <h2>Cifras Actuales</h2>
+        <h2>Cifras Actuales</h2>
+        <section class="section">
+           
             <div class="section-content">
-                <a href="#">icono1</a>
+                <img src="../img/aboutUs/icons/wordlwideWorkers.png"></img>
                 <p>Mas de 500 trabajadores a lo largo del pais</p>
             </div>
                 <div class="section-content">
-                <a href="#">icono2</a>
+                <img src="../img/aboutUs/icons/happyClients.png"></img>
                 <p>Mas de 2000 clientes satisfechos<br>
                 con nuestros servicios</p>
             </div>
             <div class="section-content">
-                <a href="#">icono3</a>
-                <p>Mas de 5 años ofreciendo servicio<br>
+                <img src="../img/aboutUs/icons/globalbusiness.png"></img>
+                <p>Mas de 40 empresas mundialmente<br>
                 de calidad</p>
             </div>
         </section>
     </div>
 
     <!-- Redes sociales -->
-    <section class="rrss">
-        <h3>NUESTRAS REDES SOCIALES</h3><br>
-        <div>
-            <a href="https://www.facebook.com/"><img src="../img/simbolos/bxl-facebook.svg" alt="Logo Facebook"></a>
-            <a href="https://www.facebook.com/"><p>Facebook</p></a>
-        </div>
-        <div>
-            <a href="https://www.instagram.com/"><img src="../img/simbolos/bxl-instagram.svg" alt="Logo Instagram"></a>
-            <a href=""><p>Instagram</p></a>
-        </div>
-     </section>
 
-    <footer>
+     <footer>
+        <div class="columnas-footer">
         <div class="footer-section">
             <h3>CONTACTO</h3>
-            <p>dicomo@gmail.com</p>
+            <a href="mailto:dicomo@gmail.com">dicomo@gmail.com</a>
         </div>
-        <div class="footer-separator"></div>
         <div class="footer-section">
             <h3>¿QUIÉNES SOMOS?</h3>
             <a href="./aboutUs.html">¿Quiénes somos?</a>
             <a href="./legalNotice.html">Aviso Legal</a>
             <a href="./affiliates.html">Afiliados</a>
+            <a href="./rss.html">RSS</a>
+            <a href="./erp-crm.html">ERP/CRM</a>
         </div>        
-        <div class="footer-separator"></div>
         <div class="footer-section">
             <h3>COMUNIDAD</h3>
-            <div>
+            <div class="red-social">
                 <a href="https://www.facebook.com/"><img src="../img/simbolos/bxl-facebook.svg" alt="Logo Facebook"></a>
-                <a href="https://www.facebook.com/"><p>Facebook</p></a>
+                <a href="https://www.facebook.com/" class="nombre-red-social">Facebook</a>
             </div>
-            <div>
+            <div class="red-social">
                 <a href="https://www.instagram.com/"><img src="../img/simbolos/bxl-instagram.svg" alt="Logo Instagram"></a>
-                <a href=""><p>Instagram</p></a>
+                <a href="" class="nombre-red-social">Instagram</a>
             </div>
+        
         </div>
-        <div>
-            <h3>MÉTODOS DE PAGO</h3>
+        </div>
+        <div id="titulo-metodos-pago">
+        <h3>MÉTODOS DE PAGO</h3>
+        </div>
+        <div id="payMethodContainer">
             <img src="../img/simbolos/LogoApplePay.png" alt="Logo ApplePay" class="payments-methods">
             <img src="../img/simbolos/LogoGooglePay.png" alt="Logo GooglePay" class="payments-methods">
             <img src="../img/simbolos/Mastercard-logo.svg.png" alt="Logo MasterCard" class="payments-methods"> 
             <img src="../img/simbolos/LogoPayPal.png" alt="Logo PayPal" class="payments-methods">
             <img src="../img/simbolos/LogoVisa.png" alt="Logo VISA" class="payments-methods">
         </div>
-        <p>&copy; DICOMO · All rights reserved</p>
+        <p id="legal">&copy; DICOMO · All rights reserved</p>
     </footer>
-
 </body>
 </html>
