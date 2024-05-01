@@ -14,8 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <!-- Scripts -->
-    <script src="../../js/productos.js"></script>
 </head>
 
 <body>
@@ -39,7 +37,7 @@
     <section>
         <article class="producto-principal">
             <img src="../../img/Fotos Productos/Aparadores/Aparador1/FotoPrincipal Aparador1.webp" alt=""
-                class="foto-principal">
+                class="foto-principal" id="foto-principal">
         
         <div class="producto-principal-descripcion">
             <div>
@@ -47,10 +45,10 @@
                 <p id="referencia">Referencia: AP0001</p>
                 <p id="precio">379,95€</p>
                 <p id="iva">IVA Incluido</p>
-                <button id="boton-corazon" onclick="cambiarCorazonAOscuro();">
-                    <img src="../../img/simbolos/Corazon_hueco.png" alt="" class="corazon" id="corazon-vacio" onclick="mostrarCorazon()">
+                <button id="boton-corazon">
+                    <img src="../../img/simbolos/Corazon_hueco.png" alt="" class="corazon" id="corazon-vacio">
                 </button>
-                <button id="boton-corazon-relleno" onclick="cambiarCorazonAClaro();">
+                <button id="boton-corazon-relleno">
                     <img src="../../img/simbolos/Corazon_relleno.png" alt="" class="corazon" id="corazon-relleno">
                 </button>
         </div>
@@ -82,7 +80,7 @@
         <!-- Fotos secundarias -->
         <div class="container">
         <div id="imagenes-secundarias">
-            <div class="image"><img src="../../img/Fotos Productos/Aparadores/Aparador1/FotoSecundaria1 Aparador1.webp" alt="" class="imagenes-secundarias" id="imgModal1"></div>
+            <img src="../../img/Fotos Productos/Aparadores/Aparador1/FotoSecundaria1 Aparador1.webp" alt="" class="imagenes-secundarias">
             <img src="../../img/Fotos Productos/Aparadores/Aparador1/FotoSecundaria2 Aparador1.webp" alt="" class="imagenes-secundarias">
             <img src="../../img/Fotos Productos/Aparadores/Aparador1/FotoSecundaria3 Aparador1.webp" alt="" class="imagenes-secundarias">
         </div>
@@ -145,6 +143,10 @@
         </div>
         <p id="legal">&copy; DICOMO · All rights reserved</p>
     </footer> 
+    <!-- Scripts -->
+    <script src="../../js/productos.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 
 </html>
