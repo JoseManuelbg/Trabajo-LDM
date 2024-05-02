@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicomo</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/course_register.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!--Header y navBar-->
+    <header>
+        <img src="../img/simbolos/Menu_hamburguesa.png" alt="Simbolo menú" class="icon">
+        <a href="./index.html"><h1>DiComo</h1></a>
+        <div id="rightheader">
+            <div id="searchBar">
+            <input type="text">
+            <img src="../img/simbolos/Lupa_busqueda.png" alt="Simbolo lupa" class="icon">
+            </div>
+            <a href="./login.html"><img src="../img/simbolos/User.png" alt="Simbolo usuario" class="icon"></a>
+            <a href="./sCart.html"><img src="../img/simbolos/Carrito.png" alt="Simbolo carrito de compra" class="icon"></a>
+        </div>
+    </header>
+
+    <!--Formulario-->
+
+    <h2>Inscribete en nuestros Cursos</h2>
+    <form action="#" method="post">
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+        <label for="dni">DNI:</label><br>
+        <input type="text" id="dni" name="dni" required><br><br>
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="opciones">Nuestros Modulos:</label>
+        <select id="opciones" name="opciones">
+            <option value="modulo1">Modulo 1</option>
+            <option value="modulo2">Modulo 2</option>
+            <option value="modulo3">Modulo 3</option>
+        </select><br>
+
+        <input type="submit" value="Enviar">
+   
+   
+    </form>
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="columnas-footer">
+    <div class="footer-section">
+        <h3>CONTACTO</h3>
+        <a href="mailto:dicomo@gmail.com">dicomo@gmail.com</a>
+    </div>
+    <div class="footer-section">
+        <h3>¿QUIÉNES SOMOS?</h3>
+        <a href="./aboutUs.html">¿Quiénes somos?</a>
+        <a href="./legalNotice.html">Aviso Legal</a>
+        <a href="./affiliates.html">Afiliados</a>
+        <a href="./rss.html">RSS</a>
+        <a href="./erp-crm.html">ERP/CRM</a>
+    </div>        
+    <div class="footer-section">
+        <h3>COMUNIDAD</h3>
+        <div class="red-social">
+            <a href="https://www.facebook.com/"><img src="../img/simbolos/bxl-facebook.svg" alt="Logo Facebook"></a>
+            <a href="https://www.facebook.com/" class="nombre-red-social">Facebook</a>
+        </div>
+        <div class="red-social">
+            <a href="https://www.instagram.com/"><img src="../img/simbolos/bxl-instagram.svg" alt="Logo Instagram"></a>
+            <a href="" class="nombre-red-social">Instagram</a>
+        </div>
+    
+    </div>
+    </div>
+    <div id="titulo-metodos-pago">
+    <h3>MÉTODOS DE PAGO</h3>
+    </div>
+    <div id="payMethodContainer">
+        <img src="../img/simbolos/LogoApplePay.png" alt="Logo ApplePay" class="payments-methods">
+        <img src="../img/simbolos/LogoGooglePay.png" alt="Logo GooglePay" class="payments-methods">
+        <img src="../img/simbolos/Mastercard-logo.svg.png" alt="Logo MasterCard" class="payments-methods"> 
+        <img src="../img/simbolos/LogoPayPal.png" alt="Logo PayPal" class="payments-methods">
+        <img src="../img/simbolos/LogoVisa.png" alt="Logo VISA" class="payments-methods">
+    </div>
+    <p id="legal">&copy; DICOMO · All rights reserved</p>
+</footer>
+
+</body>
+
+</html>
