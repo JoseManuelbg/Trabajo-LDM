@@ -1,5 +1,7 @@
 body {
-    background-color: #FFF2E1;
+    background-color: #fcf8f3;
+    margin: 0;
+    padding: 0;
 }
 
 /*Titulos*/ 
@@ -38,12 +40,21 @@ body {
 .filas {
     border-top: 1px solid black;
     padding-top: 50px;
+    margin-bottom: 50px;
     display: grid;
     justify-content: center;
     align-content: center;
     gap: 150px;
     grid-auto-flow: column;
-    margin: 0px 50px 50px 50px;
+
+}
+
+.producto{
+    width: 400px;
+}
+.pieDeFoto{
+    width: 400px;;
+    display: inline-flex;
 }
 .contenido{
     width: fit-content;
@@ -56,7 +67,7 @@ body {
 }
 
 .heart{
+    height: 30px;
     width: 30px;
-    float: right;
-    box-sizing: border-box;
+    margin-left: auto;
 }
