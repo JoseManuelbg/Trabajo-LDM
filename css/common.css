@@ -19,6 +19,7 @@
     transition: all 400ms;
 }
 /*Estilizacion del header*/
+
 header{
     background-color: #ddd3cc;
     display: flex;
@@ -26,10 +27,11 @@ header{
     justify-content: space-between;
     height: 70px;
     padding-left: 10px;
-    position: sticky;
-    position: -webkit-sticky;
-    z-index: 1000;
     width: 100%;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    border-bottom: 3px solid #D1BB9E;
 }
 
 header > a {
@@ -135,7 +137,6 @@ y en la izquierda*/
     align-content: center;
     gap: 300px;
     grid-auto-flow: column;
-
 }
 
 #payMethodContainer > img {
@@ -162,7 +163,8 @@ footer > p {
     width: 100%;
 }
 
-aside > button {
+aside > a > button {
+
     background-color: transparent;
     border: 1px solid black;
     border-radius: 5px;
@@ -170,7 +172,7 @@ aside > button {
     margin-top: 10px;
 }
 
-aside > button:hover{ 
+aside > a > button:hover{ 
     background-color: #ede7e2;
     transform: scale(1.2);
     transition: all 400ms;
@@ -192,8 +194,7 @@ aside > button:hover{
 /* Sidebar */
 
 #sidebar {
-    top: 70px;
-    z-index: 100;
+    z-index: 1000;
     position: fixed;
     width: 400px;
     height: 100%;
@@ -203,13 +204,39 @@ aside > button:hover{
     transition: all 700ms linear;
 }
 
-#sidebar ul li{
+#sidebar ul li a{
     color: black;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     padding: 15px 10px;
     list-style: none;
     border-bottom: 1px solid #d1bb9e6c;
+}
+
+.titulo-sidebar {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#subclase-sidebar {
+    margin-left: 30px;
+    display: none;
+    background-color: purple;
+}
+
+#subclase-sidebar.active-subclase{
+    display: block;
+}
+
+.cross{
+    width: 20px;
+    height: auto;
+    float: right;
+    margin-top: 2px;
+}
+
+.categoria-sidebar {
+    background-color: aqua;
 }
 
 #logo {
@@ -232,3 +259,4 @@ aside > button:hover{
 #sidebar.active {
     left: 0px;
 }
+
