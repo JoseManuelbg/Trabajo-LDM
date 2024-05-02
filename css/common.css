@@ -1,3 +1,5 @@
+
+
 /* ICONS */
 * {
     margin: 0;
@@ -10,6 +12,12 @@
     width: 30px;
     height: 30px;
 }
+
+.icon:hover  {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 400ms;
+}
 /*Estilizacion del header*/
 header{
     background-color: #ddd3cc;
@@ -18,7 +26,12 @@ header{
     justify-content: space-between;
     height: 70px;
     padding-left: 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1000;
+    width: 100%;
 }
+
 header > a {
     color: black;
     text-decoration: none;
@@ -165,7 +178,6 @@ aside > button:hover{
 }
 
 .red-social {
-    
     display: grid;
     justify-content: center;
     align-content: center;
@@ -180,6 +192,7 @@ aside > button:hover{
 /* Sidebar */
 
 #sidebar {
+    top: 70px;
     z-index: 100;
     position: fixed;
     width: 400px;
@@ -219,4 +232,3 @@ aside > button:hover{
 #sidebar.active {
     left: 0px;
 }
-
