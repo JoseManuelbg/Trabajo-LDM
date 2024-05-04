@@ -86,7 +86,7 @@ aside{
 /* Footer Style*/
 
 footer{
-    
+
     background-color: #ede7e2;
     height: auto;
 }
@@ -210,34 +210,46 @@ aside > a > button:hover{
     text-align: left;
     padding: 15px 10px;
     list-style: none;
-    border-bottom: 1px solid #d1bb9e6c;
 }
+
+#sidebar.active {
+    left: 0px;
+}
+
+/* Sidebar: Categorias*/
 
 .titulo-sidebar {
     font-size: 20px;
     font-weight: bold;
 }
 
-#subclase-sidebar {
+.subclase-sidebar1, .subclase-sidebar2 {
     margin-left: 30px;
-    display: none;
-    background-color: purple;
+    padding: 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1.5s ease;
 }
 
-#subclase-sidebar.active-subclase{
-    display: block;
+.subclase-sidebar1.active-subclase, .subclase-sidebar2.active-subclase{
+    opacity: 1;
+    max-height: 20px;    
 }
 
-.cross{
+#mostrar-subclases1, #mostrar-subclases2 {
     width: 20px;
     height: auto;
     float: right;
     margin-top: 2px;
+    transition: all 1.5s;
 }
 
-.categoria-sidebar {
-    background-color: aqua;
+#mostrar-subclases1.animacion, #mostrar-subclases2.animacion {
+    transform: rotate(135deg);
 }
+
+/* Sidebar: Logo */
 
 #logo {
     width: 200px;
@@ -245,18 +257,14 @@ aside > a > button:hover{
     display: block;
     margin: 0 auto;
     transition: all 1.5s;
-    padding-bottom: 25px;
+    padding: 40px 0 40px 0;
 }
 
 #logo.animacion{
     transform: rotate(360deg);
 }
 
-#logo.animacion:hover {
-    transform: scaleY(1.080);
-}
+/* Fin Sidebar*/
 
-#sidebar.active {
-    left: 0px;
-}
+
 
