@@ -5,3 +5,22 @@ body {
     text-align: center;
     padding: 0 300px 0 300px;
 }
+
+article > h1 {
+    font-size: 50px;
+    padding: 20px 0 15px;
+}
+
+article {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #ddd3cc;
+    height: 600px;
+}
+
+/* Logos */
+
+.contenedor-logos {
+    width: fit-content;
+    margin: 50px auto;
+}

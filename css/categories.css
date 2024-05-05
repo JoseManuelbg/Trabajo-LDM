@@ -1,0 +1,26 @@
+.fila-galeria {
+    padding: 50px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 200px;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#ultima-fila {
+    border-bottom: 1px solid black;
+    margin-bottom: 70px;
+}
+
+.texto {
+    padding: 40px;
+    width: 1225px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.texto > h1 {
+    margin-bottom: 15px;
+}

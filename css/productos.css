@@ -185,7 +185,7 @@ h4 {
 /*Modal box*/
 .container .popup-image{
     position: fixed;
-    top: 0;
+    top: 70px;
     left: 0;
     background:rgba(0,0,0,.9);
     height: 100%;
@@ -207,11 +207,12 @@ h4 {
 
 .container .popup-image img{
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 5px solid #fff;
     border-radius:5px ;
-    width: 750px;
+    width: 650px;
+    height: 820px;
     object-fit: cover;
 }

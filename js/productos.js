@@ -14,15 +14,13 @@ document.getElementById('boton-corazon-relleno').addEventListener('click', funct
 
 // Fin corazón
 
-// Anuncio descuento
+// Añadido correctamente
 
 document.getElementById('anyadir-carrito').addEventListener("click", function() {
-    console.log("Entra");
     swal({
-        title: "Good job!",
-        text: "You clicked the button!",
+        title: "¡Añadido correctamente!",
+        text: "El producto se añadió a la cesta correctamente",
         icon: "success",
-        button: "Aww yiss!",
         timer: 3000,
       });
 });
