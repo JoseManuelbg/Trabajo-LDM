@@ -1,17 +1,73 @@
 body {
-    background-color: #FFF2E1;
+    background-color: #fcf8f3;
+    margin: 0;
+    padding: 0;
 }
+
+/*Titulos*/ 
+.tituloPagina{
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.tituloAparador{
+    align-content: center;
+    justify-content: center;
+}
+
+.piePagina{
+   margin: 20px 20px 20px 20px;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+/*Muebles*/
+.titulo{
+    width: fit-content;
+    float: left;
+    box-sizing: border-box;
+}
+.precio{
+    width: fit-content;
+    clear: left;
+    box-sizing: border-box;
+}
+
 
 /*filas imagenes*/
 .filas {
     border-top: 1px solid black;
     padding-top: 50px;
+    margin-bottom: 50px;
     display: grid;
     justify-content: center;
     align-content: center;
     gap: 150px;
     grid-auto-flow: column;
-    margin: 0px 50px 50px 50px;
+
+}
+
+.producto{
+    width: 400px;
+}
+.pieDeFoto{
+    width: 400px;;
+    display: inline-flex;
+}
+.contenido{
+    width: fit-content;
 }
 
 /*imagenes*/
+.categoryAparador{
+    width: 400px;
+    
+}
+
+.heart{
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+}
