@@ -232,9 +232,9 @@ aside > a > button:hover{
     transition: all 1.5s ease;
 }
 
-.subclase-sidebar1.active-subclase, .subclase-sidebar2.active-subclase{
+.subclase-sidebar1.active-subclase, .subclase-sidebar2.active-subclase {
     opacity: 1;
-    max-height: 20px;    
+    max-height: 20px;
 }
 
 #mostrar-subclases1, #mostrar-subclases2 {

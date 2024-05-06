@@ -1,3 +1,7 @@
+body {
+    background-color: #fcf8f3;
+}
+
 .fila-galeria {
     padding: 50px;
     display: grid;
@@ -7,6 +11,22 @@
     width: fit-content;
     margin: 0 auto;
 }
+
+.fila-galeria > div > a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    
+}
+
+.fila-galeria > div {
+    transition: all 700ms;
+}
+
+.fila-galeria > div:hover{
+    transform: scale(1.1);
+}
+
 
 #ultima-fila {
     border-bottom: 1px solid black;
