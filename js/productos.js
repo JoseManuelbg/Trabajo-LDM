@@ -64,3 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Fin mostrar imágenes en grande
+
+//counter
+
