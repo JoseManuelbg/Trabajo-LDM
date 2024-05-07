@@ -8,17 +8,18 @@ body {
 .tituloPagina{
     align-content: center;
     justify-content: center;
-    margin-top: 30px;
     text-align: center;
+    border-bottom: 1px solid black ;
+    margin: 30px 80px 20px 80px;
 }
 
-.tituloAparador{
+.tituloPrincipal{
     align-content: center;
     justify-content: center;
 }
 
 .piePagina{
-   margin: 20px 20px 20px 20px;
+   margin: 10px 20px 20px 20px;
     align-content: center;
     box-sizing: border-box;
 }
@@ -38,7 +39,6 @@ body {
 
 /*filas imagenes*/
 .filas {
-    border-top: 1px solid black;
     padding-top: 50px;
     margin-bottom: 50px;
     display: grid;
@@ -51,6 +51,7 @@ body {
 
 .producto{
     width: 400px;
+    transition: all .5s;  
 }
 .pieDeFoto{
     width: 400px;;
@@ -60,15 +61,50 @@ body {
     width: fit-content;
 }
 
-/*imagenes*/
-.categoryAparador{
-    width: 400px;
-    
+#ultimaFila{
+    border-bottom: 1px solid black;
+    padding-bottom: 70px;
+    margin: 0px 80px 50px 80px;
 }
 
-.heart{
+/*imagenes*/
+.fotoPrincipal{
+    width: 400px;
+}
+
+.producto:hover{
+    transform: scale(1.1);
+     
+}
+
+/*Boton corazon*/
+.corazon{
     height: 30px;
     width: 30px;
     margin-left: auto;
+}
+
+#boton-corazon-relleno {
+    display: none;
+}
+
+#boton-corazon, #boton-corazon-relleno {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 20px;
+    clear: right;
+    margin: 0px 0px 10px 100px; 
+}
+
+#boton-corazon {
+    display: block;
+}
+
+#boton-corazon:hover, #boton-corazon-relleno:hover {
+    transform: scale(1.2);
+    transition: all 400ms;
+    cursor: pointer;
 }
 
