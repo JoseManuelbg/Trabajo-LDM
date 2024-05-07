@@ -81,17 +81,101 @@ button{ /*Afecta a todos los botones del index*/
 
 /*Estilo de las secciones de los carruseles*/
 #carruseles{ /*Contenedor principal*/
-    height: 100vh;
+    height: 120vh;
     background-color: white;
-    border: 1px solid black;
-
+  
 }
 
 .carouselP{
     height: 50%;
-    border: 1px solid black;
+    width: 95%;
+    margin-left: 45px;
 }
 
+.carouselP .image-list{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin-bottom: 30px;
+    font-size: 0;
+    overflow-x: auto;
+}
+
+.carouselP .image-list .image-item{
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+    margin-left: 10px;
+
+}
+
+#carousel1> p{
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+.arrows{
+    width: 15px;
+}
+
+#carruseles .slider-scrollbar{
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track{
+    height: 2px;
+    width: 100%;
+    background: #ccc ;
+    position: relative;
+}
+
+.slider-scrollbar:hover .scrollbar-track{
+    height: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: #000 ;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+.slider-scrollbar .scrollbar-thumb:active{
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+/*Botonoes del carrusel*/
+#carousel1 .slide-button{
+    position: absolute;
+    top: 1200PX;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  
+}
+
+#carousel1 .slide-button#prev-slide{
+   left: -10px;
+}
+#carousel1 .slide-button#next-slide{
+right: -10px;
+}
 /* Alerta del principio */
 
 .swal-overlay {
