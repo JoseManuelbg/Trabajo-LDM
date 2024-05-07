@@ -207,6 +207,8 @@ aside > a > button:hover{
 
 /* Sidebar */
 
+
+
 #sidebar {
     z-index: 1000;
     position: fixed;
