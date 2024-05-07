@@ -83,6 +83,7 @@ body {
     width: 30px;
     margin-left: auto;
 }
+
 #boton-corazon-relleno {
     display: none;
 }
@@ -106,3 +107,4 @@ body {
     transition: all 400ms;
     cursor: pointer;
 }
+
