@@ -142,6 +142,7 @@ y en la izquierda*/
 #payMethodContainer > img {
     width: 70px;
     height: auto;
+    margin: auto;
 }
 
 #titulo-metodos-pago{
