@@ -1,0 +1,13 @@
+.content{
+margin: 50px;
+
+}
+.content > h2{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.content > p{
+    text-align: justify;
+    padding-bottom: 10px;
+}
