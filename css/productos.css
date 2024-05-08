@@ -15,6 +15,11 @@ h4 {
     font-weight: bold;
     margin-bottom: 5px;
 }
+.roboto-regular { 
+    font-family: "Roboto", 
+    sans-serif; font-weight: 400; 
+    font-style: normal; }
+
 
 /* Imágen principal y descripción */
 .producto-principal {
