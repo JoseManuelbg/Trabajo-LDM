@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dicomo</title>
-
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/course_register.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/course_register.css">
 
 </head>
 
@@ -38,7 +36,7 @@
         <label for="apellido">Apellido:</label><br>
         <input type="text" id="apellido" name="apellido" required><br><br>
         <label for="dni">DNI:</label><br>
-        <input type="text" id="dni" name="dni" required><br><br>
+        <input type="text" id="dni" name="dni" required maxlength="7"><br><br>
         <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
         <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
         <label for="telefono">Teléfono:</label><br>
@@ -46,12 +44,16 @@
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required><br><br>
 
-        <label for="opciones">Nuestros Modulos:</label>
-        <select id="opciones" name="opciones">
-            <option value="modulo1">Modulo 1</option>
-            <option value="modulo2">Modulo 2</option>
-            <option value="modulo3">Modulo 3</option>
-        </select><br>
+        <h3>Nuestros Modulos</h3>
+
+        <label for="modulo1">modulo1</label>
+        <input type="checkbox" name="modulo1" value="modulo1">
+        <label for="modulo2">modulo2</label>
+        <input type="checkbox" name="modulo2" value="modulo2">
+        <label for="modulo1">modulo3</label>
+        <input type="checkbox" name="modulo3" value="modulo3">
+        <label for="modulo4">modulo4</label>
+        <input type="checkbox" name="modulo4" value="modulo4">
 
         <input type="submit" value="Enviar">
    
