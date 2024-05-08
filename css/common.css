@@ -83,6 +83,14 @@ aside{
     flex-direction: column;
 }
 
+aside > button{
+    background-color: #ddd3cc;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+}
+
+
 /* Footer Style*/
 
 footer{

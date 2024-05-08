@@ -67,3 +67,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //counter
 
+let counterN = 0; // Inicializamos el contador en 1
+const add = document.getElementById("addProduct");
+const less = document.getElementById("removeProduct");
+let text = document.getElementById("countText");
+let totalPrice = 379.95; // Precio del producto (por ejemplo, $10)
+
+add.addEventListener("click", function(){
+    counterN++;
+    text.textContent = counterN;
+    updateTotal();
+});
+
+less.addEventListener("click", function(){
+    if (counterN >= 1) {
+        counterN--;
+        text.textContent = counterN;
+        updateTotal();
+    }
+});
+
+function updateTotal() {
+    let total = (counterN * totalPrice).toFixed(2); // Multiplicamos el contador por el precio
+    document.getElementById("total").textContent = total; // Actualizamos el total en el HTML
+}
+document.getElementById("anyadir-carrito").addEventListener("click", function() {
+    counterN = 0; // Restablecemos el contador a 1
+    text.textContent = counterN;
+    updateTotal();
+});
