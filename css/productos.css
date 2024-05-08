@@ -221,3 +221,34 @@ h4 {
     height: 820px;
     object-fit: cover;
 }
+
+.price-counters {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+
+}
+.buttonsStyle{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-right: 20px;
+    border: 1px solid black;
+    width: 50%;
+}
+
+.buttonsStyle > button{
+    width: 50%;
+    background-color: white;
+    border: none;
+    font-size: 20px;
+
+}
+
+.price-counters > button{
+
+    width: 10%;
+    background-color: #fff;
+}
