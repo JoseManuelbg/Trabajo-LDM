@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff5e7;
+    background-color: #fcf8f3;
 }
 
 form {
@@ -36,6 +36,18 @@ input[type="date"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: #fcf8f3;
+}
+
+input[type="checkbox"] {
+    width: 70%;
+    background-color: #ddd3cc;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-right: 10px;
+    border: none;
+    display: inline-block;
+    
 }
 
 input[type="submit"] {
