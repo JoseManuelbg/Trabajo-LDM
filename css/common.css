@@ -164,6 +164,11 @@ footer > p {
     width: 100%;
 }
 
+#legal > a {
+    color: black;
+    margin-bottom: 10px;
+}
+
 aside > a > button {
 
     background-color: transparent;
@@ -248,6 +253,15 @@ aside > a > button:hover{
 
 #mostrar-subclases1.animacion, #mostrar-subclases2.animacion {
     transform: rotate(135deg);
+}
+
+#imagen-sorteo {
+    width: 380px;
+    justify-items: center;
+    top: 710px;
+    margin-left: 10px;
+    cursor: pointer;
+    position: fixed;
 }
 
 /* Sidebar: Logo */

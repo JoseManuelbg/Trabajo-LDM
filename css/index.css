@@ -101,10 +101,9 @@ button{ /*Afecta a todos los botones del index*/
 }
 
 .carouselP .image-list .image-item{
-    width: 325px;
-    height: 400px;
+    
     object-fit: cover;
-    margin-left: 10px;
+    margin: 0 10px 0 10px;
 
 }
 
@@ -115,7 +114,7 @@ button{ /*Afecta a todos los botones del index*/
     margin-left: 10px;
 }
 .arrows{
-    width: 15px;
+    width: 20px;
 }
 
 #carruseles .slider-scrollbar{
@@ -160,7 +159,7 @@ button{ /*Afecta a todos los botones del index*/
     bottom: -10px;
 }
 
-/*Botonoes del carrusel*/
+/* Botones del carrusel */
 #carousel1 .slide-button{
     position: absolute;
     top: 1200PX;
@@ -171,10 +170,23 @@ button{ /*Afecta a todos los botones del index*/
 }
 
 #carousel1 .slide-button#prev-slide{
-   left: -10px;
+    margin-top: 50px;
+    left: 0px;
+    background-color: transparent;
+    border: 0;
+    transition: all 500ms;
 }
+
+#carousel1 .slide-button#prev-slide:hover, #carousel1 .slide-button#next-slide:hover {
+    transform: scale(1.2);
+}
+
 #carousel1 .slide-button#next-slide{
-right: -10px;
+    margin-top: 50px;
+    right: 0px;
+    background-color: transparent;
+    border: 0;
+    transition: all 500ms;
 }
 /* Alerta del principio */
 

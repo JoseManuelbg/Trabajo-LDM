@@ -1,0 +1,67 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+
+
+/* Estilos del cuerpo */
+
+.politica {
+    background-color: #ede7e2;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: -3px 3px 5px #ddd3cc;
+    border: 1px solid #ddd3cc;
+    
+}
+
+.cookies {
+    background-color: #ddd3cc;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: -3px 3px 5px #ddd3cc;
+    border: 1px solid #ddd3cc;
+    
+}
+
+
+.texto1 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.texto2 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.texto3 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.texto4 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
