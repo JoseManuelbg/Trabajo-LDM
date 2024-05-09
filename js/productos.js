@@ -1,29 +1,5 @@
 
 
-// Corazón
-
-document.getElementById('boton-corazon').addEventListener('click', function() {
-    document.getElementById('boton-corazon').style.display = 'none';
-    document.getElementById('boton-corazon-relleno').style.display = 'block';
-});
-
-document.getElementById('boton-corazon-relleno').addEventListener('click', function() {
-    document.getElementById('boton-corazon').style.display = 'block';
-    document.getElementById('boton-corazon-relleno').style.display = 'none';
-});
-
-// Fin corazón
-
-// Añadido correctamente
-
-document.getElementById('anyadir-carrito').addEventListener("click", function() {
-    swal({
-        title: "¡Añadido correctamente!",
-        text: "El producto se añadió a la cesta correctamente",
-        icon: "success",
-        timer: 3000,
-      });
-});
 
 
 
@@ -67,32 +43,62 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //counter
 
-let counterN = 0; // Inicializamos el contador en 1
-const add = document.getElementById("addProduct");
-const less = document.getElementById("removeProduct");
-let text = document.getElementById("countText");
-let totalPrice = 379.95; // Precio del producto (por ejemplo, $10)
+window.addEventListener("DOMContentLoaded", function() {
+// Corazón
 
-add.addEventListener("click", function(){
-    counterN++;
-    text.textContent = counterN;
-    updateTotal();
+document.getElementById('boton-corazon').addEventListener('click', function() {
+    document.getElementById('boton-corazon').style.display = 'none';
+    document.getElementById('boton-corazon-relleno').style.display = 'block';
 });
 
-less.addEventListener("click", function(){
-    if (counterN >= 1) {
-        counterN--;
+document.getElementById('boton-corazon-relleno').addEventListener('click', function() {
+    document.getElementById('boton-corazon').style.display = 'block';
+    document.getElementById('boton-corazon-relleno').style.display = 'none';
+});
+
+// Fin corazón
+
+// Añadido correctamente
+
+document.getElementById('anyadir-carrito').addEventListener("click", function() {
+    swal({
+        title: "¡Añadido correctamente!",
+        text: "El producto se añadió a la cesta correctamente",
+        icon: "success",
+        timer: 3000,
+      });
+});
+
+
+    //Corazon ^
+    let counterN = 0; // Inicializamos el contador en 0
+    const add = document.getElementById("addProduct");
+    const less = document.getElementById("removeProduct");
+    let text = document.getElementById("countText");
+    let totalPrice = 379.95; // Precio del producto
+
+    add.addEventListener("click", function(){
+        counterN++;
         text.textContent = counterN;
         updateTotal();
-    }
-});
+    });
 
-function updateTotal() {
-    let total = (counterN * totalPrice).toFixed(2); // Multiplicamos el contador por el precio
-    document.getElementById("total").textContent = total; // Actualizamos el total en el HTML
-}
-document.getElementById("anyadir-carrito").addEventListener("click", function() {
-    counterN = 0; // Restablecemos el contador a 1
-    text.textContent = counterN;
-    updateTotal();
+    less.addEventListener("click", function(){
+        if (counterN >= 1) {
+            counterN--;
+            text.textContent = counterN;
+            updateTotal();
+        }
+    });
+
+    document.getElementById("anyadir-carrito").addEventListener("click", function() {
+        counterN = 0; // Restablecemos el contador a 0
+        text.textContent = counterN;
+        updateTotal();
+    });
+
+    function updateTotal() {
+        let total = (counterN * totalPrice).toFixed(2); // Multiplicamos el contador por el precio
+        document.getElementById("total").textContent = total; // Actualizamos el total en el HTML
+    }
 });
