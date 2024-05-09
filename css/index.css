@@ -188,27 +188,5 @@ button{ /*Afecta a todos los botones del index*/
     border: 0;
     transition: all 500ms;
 }
-/* Alerta del principio */
 
-.swal-overlay {
-    background-color: #fcf8f369;
-}
-
-.swal-modal {
-    background-color: #ede7e2;
-    border: 3px solid #A79277;
-    width: 700px;
-    height: fit-content;
-}
-
-.swal-footer {
-    text-align: center;
-}
-
-.swal-button {
-    background-color: #ddd3cc;
-    border: 1px solid #A79277;
-    color: #53514F;
-    font-size: 16px;
-}
 
