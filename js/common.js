@@ -16,5 +16,22 @@ window.addEventListener("DOMContentLoaded", function(){
             });
         });
     });
+    document.getElementById("imagen-sorteo").addEventListener("click", function () {
+        var validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+        swal({
+            title: "PARTICIPACIÓN EN SORTEO",
+            text: "Email: ",
+            content: "input",
+            icon: "/img/favicon.png",
+            button: "Aceptar",
+        })
+            .then((value) => {
+                if (value != null && validEmail.test(value)) {
+                    swal('Participación enviada correctamente')
+                } else {
+                    swal('Email incorrecto')
+                }
+            });
+    });
 });
 
