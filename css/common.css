@@ -237,6 +237,8 @@ aside > a > button:hover{
 .titulo-sidebar {
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
+    transition: all 500ms;
 }
 
 .subclase-sidebar1, .subclase-sidebar2 {
@@ -259,6 +261,7 @@ aside > a > button:hover{
     float: right;
     margin-top: 2px;
     transition: all 1.5s;
+    cursor: pointer;
 }
 
 #mostrar-subclases1.animacion, #mostrar-subclases2.animacion {
