@@ -109,21 +109,6 @@ body {
 
 /*Fuentes*/
 
-h1.tituloPrincipal{
-    margin-top: 5px;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 28px;
-}
-
-p.piePagina{
-    font-family: "Roboto",
-    sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 p.titulo, .precio{
     font-family: "Roboto",
@@ -131,6 +116,12 @@ p.titulo, .precio{
     font-weight: 400;
     font-style: normal;
 }
+.marcellus-sc-regular {
+    font-family: "Marcellus SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 
 .oswald-titulos {
     margin-top: 5px;
