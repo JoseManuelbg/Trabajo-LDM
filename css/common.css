@@ -291,5 +291,43 @@ aside > a > button:hover{
 
 /* Fin Sidebar*/
 
+/* Alertas */
 
+.swal-overlay {
+    background-color: #fcf8f369;
+}
 
+.swal-modal {
+    background-color: #ede7e2;
+    border: 3px solid #A79277;
+    width: 700px;
+    height: fit-content;
+    color: #ede7e2;
+
+}
+
+.swal-footer {
+    text-align: center;
+}
+
+.swal-button {
+    background-color: #ddd3cc;
+    border: 1px solid #A79277;
+    color: #53514F;
+    font-size: 16px;
+}
+
+.swal-icon--success {
+    background-color: transparent;
+    &::before, &::after{
+        background-color: transparent;
+    }
+    &__ring{
+        background-color: transparent;
+        border: 0;
+        z-index: 100;
+    }
+}
+.swal-icon--success__hide-corners {
+    background-color: transparent;
+}

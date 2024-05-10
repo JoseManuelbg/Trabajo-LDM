@@ -41,10 +41,16 @@ h4 {
     margin-bottom: 50px;
 }
 
-.foto-principal {
+.foto-principal, .foto-principal-blanca {
     width: 500px;
     height: auto;
     display: inline-block;
+    cursor: pointer;
+    display: none;
+}
+
+.foto-principal.active-img, .foto-principal-blanca.active-img {
+    display: block;
 }
 
 .producto-principal-descripcion {
@@ -75,9 +81,9 @@ h4 {
 
 #iva {
     width: fit-content;
-    font-size: 10px;
+    font-size: 13px;
     float: left;
-    margin: 17px 0px 0px 5px;
+    margin: 13px 0px 0px 1px;
 }
 
 /* Botón corazón */
@@ -98,7 +104,7 @@ h4 {
     border: 0;
     width: 30px;
     clear: right;
-    margin: 6px 0px 10px 470px;
+    margin: 0px 0px 10px 470px;
 }
 
 #boton-corazon {
@@ -122,20 +128,22 @@ h4 {
 
 
 
-#color {
-    background-color: #C59769;
-    width: 20px;
-    height: 20px;
+.color {
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
     border-radius: 100%;
+    padding: 2px;
 }
 
-#color:hover {
-    background-color: #C59769;
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
+.color.active-color {
     border: 2px solid lightgrey;
-    transform: scale(1.5);
+    
+}
+
+.color:hover {
+    border: 2px solid lightgrey;
+    transform: scale(1.2);
     transition: all 300ms;
     cursor: pointer;
 }
@@ -143,6 +151,7 @@ h4 {
 /* Fin colores */
 .descripcion {
     border-top: 1px solid black;
+    padding-bottom: 20px;
 }
 
 .contador-unidades {
@@ -173,19 +182,29 @@ h4 {
 /* Imágenes secundarias */
 #imagenes-secundarias {
     border-top: 1px solid black;
-    padding-top: 50px;
+    border-bottom: 1px solid black;
+    padding-top: 70px;
+    padding-bottom: 70px;
     display: grid;
     justify-content: center;
     align-content: center;
     gap: 150px;
     grid-auto-flow: column;
     margin: 0px 50px 50px 50px;
+    cursor: pointer;
 }
 
-.imagenes-secundarias {
-    width: 300px;
+
+
+.imagenes-secundarias.active-img, .imagenes-secundarias-blancas.active-img {
+    display: block;
+}
+
+.imagenes-secundarias, .imagenes-secundarias-blancas {
+    width: 350px;
     transition: all 300ms;
     position: relative;
+    display: none;
 }
 
 .imagenes-secundarias:hover {
@@ -259,11 +278,81 @@ h4 {
     background-color: white;
     border: none;
     font-size: 20px;
-
+    cursor: pointer;
+    transition: all 500ms;
 }
 
 .price-counters>button {
-
     width: 10%;
     background-color: #fff;
 }
+
+/* Imagenes comprados juntos */
+.fotoPrincipal{
+    width: 400px;
+}
+
+.producto:hover{
+    transform: scale(1.1);
+     
+}
+
+.fila-comprados-juntos {
+    padding-top: 50px;
+    margin-bottom: 100px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 150px;
+    grid-auto-flow: column;
+}
+
+.titulo{
+    width: fit-content;
+    float: left;
+    box-sizing: border-box;
+}
+.precio{
+    width: fit-content;
+    clear: left;
+    box-sizing: border-box;
+}
+
+.producto{
+    width: 400px;
+    transition: all .5s;  
+    cursor: pointer;
+}
+
+#carrito {
+    background-color: transparent;
+    border: 0;
+    width: fit-content;
+    float: right;
+    display: block;
+    width: 30px;
+    transition: all 500ms;
+}
+
+#carrito:hover {
+    transform: scale(1.2);
+}
+
+.contenido{
+    width: fit-content;
+    float: left;
+}
+
+#comprados-juntos {
+    margin-left: 150px;
+}
+
+.contenido > a > p{
+    text-decoration: none;
+    color: black;
+}
+
+.contenido > a > p:hover{
+    text-decoration: underline;
+}
+
