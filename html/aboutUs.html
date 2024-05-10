@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dicomo</title>
-
+    <title>Sobre nosotros</title>
+    <!-- Hojas de estilos -->
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/aboutUs.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <!-- Scripts -->
+    <script src="../js/common.js"></script>
 </head>
+
 <body>
     <!--Header y navBar-->
     <header>
-        <img src="../img/simbolos/Menu_hamburguesa.png" alt="Simbolo menú" class="icon">
-        <a href="./index.html"><h1>DiComo</h1></a>
+        <img src="../img/simbolos/Menu_hamburguesa.png" alt="Simbolo menú" class="icon" id="abrir-menu">
+        <a href="./index.html">
+            <h1>DiComo</h1>
+        </a>
         <div id="rightheader">
             <div id="searchBar">
-            <input type="text">
-            <img src="../img/simbolos/Lupa_busqueda.png" alt="Simbolo lupa" class="icon">
+                <input type="text">
+                <a href="./categories.html"><img src="../img/simbolos/Lupa_busqueda.png" alt="Simbolo lupa"
+                        class="icon"></a>
             </div>
             <a href="./login.html"><img src="../img/simbolos/User.png" alt="Simbolo usuario" class="icon"></a>
-            <a href="./sCart.html"><img src="../img/simbolos/Carrito.png" alt="Simbolo carrito de compra" class="icon"></a>
+            <a href="./sCart.html"><img src="../img/simbolos/Carrito.png" alt="Simbolo carrito de compra"
+                    class="icon"></a>
         </div>
     </header>
-
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <img src="../img/favicon.png" alt="" id="logo">
+            </li>
+            <li>
+                <div class="categoria-sidebar">
+                    <a href="./categories.html" class="titulo-sidebar">Nuestros muebles</a>
+                    <img src="../img/simbolos/mdi--plus.png" alt="" class="cross" id="mostrar-subclases1">
+                </div>
+                <ul>
+                    <li class="subclase-sidebar1"><a href="./category_chair.html">Sillas</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_table.html">Mesas</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_sofa.html">Sofás</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_aparadores.html">Aparadores</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_lamparas.html">Lámparas</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_taburetes.html">Taburetes</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="categoria-sidebar">
+                    <a href="" class="titulo-sidebar">Restauración</a>
+                    <img src="../img/simbolos/mdi--plus.png" alt="" id="mostrar-subclases2">
+                </div>
+                <ul>
+                    <li class="subclase-sidebar2"><a href="./usWorkshop.html">Nuestros talleres</a></li>
+                    <li class="subclase-sidebar2"><a href="./course_register.html">Inscríbete</a></li>
+                </ul>
+            </li>
+            <li><a href="./aboutUs.html" class="titulo-sidebar">Sobre nosotros</a></li>
+        </ul>
+        <img src="../img/sidebar/461-menu-sorteo-Mayo_es_cnqb8n.webp" alt="" id="imagen-sorteo">
+    </nav>
     <!-- Contenido principal -->
     <div class="aboutus1">
         <div id="img1">
@@ -31,8 +74,8 @@
         <div class="texto">
             <h2>Una Tienda de Muebles Diferente</h2>
             <p>Explora tu tienda de muebles de confianza con un toque diferente. <br>
-            Descubre diseños únicos y originales que se adaptan a tu estilo y personalidad. <br>
-            Transforma tus espacios con muebles que cuentan historias y marcan la diferencia en tu hogar.</p>
+                Descubre diseños únicos y originales que se adaptan a tu estilo y personalidad. <br>
+                Transforma tus espacios con muebles que cuentan historias y marcan la diferencia en tu hogar.</p>
         </div>
     </div>
 
@@ -42,75 +85,92 @@
         </div>
         <div class="texto">
             <h2>Nuestras Motivaciones</h2>
-            <p>Nos motiva la pasión por el diseño innovador y la búsqueda de muebles que reflejen la individualidad de cada persona. <br>
-            Queremos ofrecer una experiencia única donde cada pieza<br>
-            cuente una historia y inspire nuevos ambientes llenos de estilo y personalidad.
+            <p>Nos motiva la pasión por el diseño innovador y la búsqueda de muebles que reflejen la individualidad de
+                cada persona. <br>
+                Queremos ofrecer una experiencia única donde cada pieza<br>
+                cuente una historia y inspire nuevos ambientes llenos de estilo y personalidad.
             </p>
         </div>
     </div>
-    
+
     <!-- Cifras actuales -->
-    <div class="aboutus3">  
+    <div class="aboutus3">
         <h2>Cifras Actuales</h2>
         <section class="section">
-           
+
             <div class="section-content">
                 <img src="../img/aboutUs/icons/wordlwideWorkers.png"></img>
                 <p>Mas de 500 trabajadores a lo largo del pais</p>
             </div>
-                <div class="section-content">
+            <div class="section-content">
                 <img src="../img/aboutUs/icons/happyClients.png"></img>
                 <p>Mas de 2000 clientes satisfechos<br>
-                con nuestros servicios</p>
+                    con nuestros servicios</p>
             </div>
             <div class="section-content">
                 <img src="../img/aboutUs/icons/globalbusiness.png"></img>
                 <p>Mas de 40 empresas mundialmente<br>
-                de calidad</p>
+                    de calidad</p>
             </div>
         </section>
     </div>
 
     <!-- Redes sociales -->
-
-     <footer>
+    <!-- Footer -->
+    <footer>
         <div class="columnas-footer">
-        <div class="footer-section">
-            <h3>CONTACTO</h3>
-            <a href="mailto:dicomo@gmail.com">dicomo@gmail.com</a>
-        </div>
-        <div class="footer-section">
-            <h3>¿QUIÉNES SOMOS?</h3>
-            <a href="./aboutUs.html">¿Quiénes somos?</a>
-            <a href="./legalNotice.html">Aviso Legal</a>
-            <a href="./affiliates.html">Afiliados</a>
-            <a href="./rss.html">RSS</a>
-            <a href="./erp-crm.html">ERP/CRM</a>
-        </div>        
-        <div class="footer-section">
-            <h3>COMUNIDAD</h3>
-            <div class="red-social">
-                <a href="https://www.facebook.com/"><img src="../img/simbolos/bxl-facebook.svg" alt="Logo Facebook"></a>
-                <a href="https://www.facebook.com/" class="nombre-red-social">Facebook</a>
+            <div class="footer-section">
+                <h3>CONTACTO</h3>
+                <a href="mailto:dicomo@gmail.com">dicomo@gmail.com</a>
             </div>
-            <div class="red-social">
-                <a href="https://www.instagram.com/"><img src="../img/simbolos/bxl-instagram.svg" alt="Logo Instagram"></a>
-                <a href="" class="nombre-red-social">Instagram</a>
+            <div class="footer-section">
+                <h3>¿QUIÉNES SOMOS?</h3>
+                <a href="./aboutUs.html">¿Quiénes somos?</a>
+                <a href="./legalNotice.html">Aviso Legal</a>
+                <a href="./affiliates.html">Afiliados</a>
+                <a href="./rss.html">RSS</a>
+                <a href="./erp-crm.html">ERP/CRM</a>
             </div>
-        
-        </div>
+            <div class="footer-section">
+                <h3>COMUNIDAD</h3>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/"><img src="../img/simbolos/bxl-facebook.svg"
+                            alt="Logo Facebook"></a>
+                    <a href="https://www.facebook.com/" class="nombre-red-social">Facebook</a>
+                </div>
+                <div class="red-social">
+                    <a href="https://www.instagram.com/"><img src="../img/simbolos/bxl-instagram.svg"
+                            alt="Logo Instagram"></a>
+                    <a href="https://www.instagram.com/" class="nombre-red-social">Instagram</a>
+                </div>
+                <div class="red-social">
+                    <a href="https://wa.me//+34609336150"><img src="../img/simbolos/nimbus--whatsapp.svg"
+                            alt="Logo WhatsApp" width="19px"></a>
+                    <a href="https://wa.me//+34609336150" class="nombre-red-social">WhatsApp</a>
+                </div>
+
+            </div>
         </div>
         <div id="titulo-metodos-pago">
-        <h3>MÉTODOS DE PAGO</h3>
+            <h3>MÉTODOS DE PAGO</h3>
         </div>
         <div id="payMethodContainer">
             <img src="../img/simbolos/LogoApplePay.png" alt="Logo ApplePay" class="payments-methods">
             <img src="../img/simbolos/LogoGooglePay.png" alt="Logo GooglePay" class="payments-methods">
-            <img src="../img/simbolos/Mastercard-logo.svg.png" alt="Logo MasterCard" class="payments-methods"> 
+            <img src="../img/simbolos/Mastercard-logo.svg.png" alt="Logo MasterCard" class="payments-methods">
             <img src="../img/simbolos/LogoPayPal.png" alt="Logo PayPal" class="payments-methods">
             <img src="../img/simbolos/LogoVisa.png" alt="Logo VISA" class="payments-methods">
         </div>
-        <p id="legal">&copy; DICOMO · All rights reserved</p>
+        <p id="legal" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a
+                href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer">Dicomo is licensed under CC BY-NC 4.0<img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
     </footer>
 </body>
+
 </html>
