@@ -60,6 +60,7 @@ body {
 .contenido{
     width: fit-content;
     float: left;
+    
 }
 
 #ultimaFila{
@@ -106,3 +107,49 @@ body {
     cursor: pointer;
 }
 
+/*Fuentes*/
+
+h1.tituloPrincipal{
+    margin-top: 5px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 28px;
+}
+
+p.piePagina{
+    font-family: "Roboto",
+    sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p.titulo, .precio{
+    font-family: "Roboto",
+    sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.oswald-titulos {
+    margin-top: 5px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+}
+.roboto-regular {
+    font-family: "Roboto",
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-condensed-50 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+}
