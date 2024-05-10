@@ -21,6 +21,7 @@
     height: 100%;
     width: 1000px;
     background-color: #ddd3cc;
+    overflow-x: scroll;
     
 }
 .price-container{
@@ -118,4 +119,39 @@
     background-color: transparent;
     width: 60%;
     height: 50px;
+}
+
+/*Contadores*/
+
+
+.price-counters {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+
+}
+
+.buttonsStyle {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-right: 20px;
+    border: 1px solid black;
+    width: 50%;
+}
+
+.buttonsStyle>button {
+    width: 50%;
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.price-counters>button {
+    width: 10%;
+    background-color: #fff;
 }

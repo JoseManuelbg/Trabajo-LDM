@@ -6,11 +6,16 @@
     <!--Imports -->
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/sCart.css">
+
+    <!--Scripts-->
+    <script src="../js/sCart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
     <title>Document</title>
 </head>
 <body>
     <!--Header y navBar-->
-    <header>
+    <header>      
         <img src="../img/simbolos/Menu_hamburguesa.png" alt="Simbolo menú" class="icon" id="abrir-menu">
         <a href="./index.html"><h1>DiComo</h1></a>
         <div id="rightheader">
@@ -31,7 +36,7 @@
                 <ul>
                     <li><a href="./category_chair.html">Sillas</a></li>
                     <li><a href="./category_table.html">Mesas</a></li>
-                    <li><a href="./category_sofa.html">Sofás</a></li>
+                    <li><a href="./category_sofa.html">Sofás</a></li>       
                     <li><a href="./category_aparadores.html">Aparadores</a></li>
                     <li><a href="./category_lamparas.html">Lámparas</a></li>
                     <li><a href="./category_taburetes.html">Taburetes</a></li>
@@ -56,24 +61,103 @@
                 <div class="descrip">
                 <div class="text">
                 <p>No se que nombre de mesa ponerle pero como este texto es largo hace su funcion</p>
-                <p>99.99€</p>
+                <p id="precio">120</p>
+                <!--Contador-->
+                <div class="contador-unidades">
+                    <div class="price-counters">
+                        <div class="buttonsStyle">
+                            <button id="removeProduct">-</button>
+                            <p id="countText">0</p>
+                            <button id="addProduct">+</button>
+                        </div>
+
+                        <p id="total">0.00</p>
+                        <p>€</p>
+                    </div>
                 </div>
-                <input value="1" type="number" name="quantity" id="quantity">
+
+                </div>
+            </div>
+            </div>
+              <!--Producto4-->
+            <div class="products">
+                <img src="../img/Fotos Productos/Mesas/Mesa2/FotoPrincipal Mesa2.webp" alt="">
+                <div class="descrip">
+                <div class="text">
+                <p>No se que nombre de mesa ponerle pero como este texto es largo hace su funcion</p>
+                <p id="precio">120</p>
+                <!--Contador-->
+                <div class="contador-unidades">
+                    <div class="price-counters">
+                        <div class="buttonsStyle">
+                            <button id="removeProduct">-</button>
+                            <p id="countText">0</p>
+                            <button id="addProduct">+</button>
+                        </div>
+
+                        <p id="total">0.00</p>
+                        <p>€</p>
+                    </div>
+                </div>
+
+                </div>
             </div>
             </div>
              <!--Producto2-->
              <div class="products">
-                <img src="../img/Fotos Productos/Sofas/Sofa4/FotoSecundaria3 Sofa4.webp" alt="">
+                <img src="../img/Fotos Productos/Mesas/Mesa2/FotoPrincipal Mesa2.webp" alt="">
                 <div class="descrip">
                 <div class="text">
                 <p>No se que nombre de mesa ponerle pero como este texto es largo hace su funcion</p>
-                <p>99.99€</p>
-                </div>
-                <input value="1" type="number" name="quantity" id="quantity">
-            </div>
-            </div>
-        </div>
+                <p id="precio">120</p>
+                <!--Contador-->
+                <div class="contador-unidades">
+                    <div class="price-counters">
+                        <div class="buttonsStyle">
+                            <button id="removeProduct">-</button>
+                            <p id="countText">0</p>
+                            <button id="addProduct">+</button>
+                        </div>
 
+                        <p id="total">0.00</p>
+                        <p>€</p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            </div>
+             <!--Producto3-->
+             <div class="products">
+                <img src="../img/Fotos Productos/Mesas/Mesa2/FotoPrincipal Mesa2.webp" alt="">
+                <div class="descrip">
+                <div class="text">
+                <p>No se que nombre de mesa ponerle pero como este texto es largo hace su funcion</p>
+                <p id="precio">120</p>
+                <!--Contador-->
+                <div class="contador-unidades">
+                    <div class="price-counters">
+                        <div class="buttonsStyle">
+                            <button id="removeProduct">-</button>
+                            <p id="countText">0</p>
+                            <button id="addProduct">+</button>
+                        </div>
+
+                        <p id="total">0.00</p>
+                        <p>€</p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            </div>
+            
+
+        
+
+
+
+        </div>
         <div class="price-container">
 
             <div class="priceThings">
@@ -87,20 +171,18 @@
                 </div>
                 <div>
                 <p>Total aproximado</p>
-                <p>00.00€</p>
+                <p id="total-price">100.00</p>
           
             </div>
             </div>
             <div class="promo-code">
-                <form action="">
+                <form id="promo-form" onsubmit="return codigoDescuento()">
                     <input type="text" name="promo" id="promo" placeholder="Codigo Promocional">
                     <button type="submit">Enviar</button>
                 </form>
             </div>
+            
             <button type="submit" id="pay">Pagar</button>
-
-        </div>
-
 
         </div>
         </div>
@@ -153,5 +235,6 @@
         </div>
         <p id="legal">&copy; DICOMO · All rights reserved</p>
     </footer>
+
 </body>
 </html>
