@@ -14,6 +14,12 @@ window.addEventListener("DOMContentLoaded", function () {
             button: "Aceptar",
         });
     });
+    document.getElementById("aceptar-cookies").addEventListener("click", function () {
+        document.getElementById("cookies").style.bottom = "-130px";
+        window.addEventListener("scroll", function () {
+            document.getElementById("cookies").style.display = "none";
+        });
+    });
 });
 
 // Fin alertas

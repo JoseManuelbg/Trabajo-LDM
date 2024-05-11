@@ -57,6 +57,7 @@ h4 {
     width: 500px;
     height: auto;
     display: inline-block;
+    text-align: justify;
 }
 
 #nombre-mueble {
