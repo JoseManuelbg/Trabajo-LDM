@@ -15,10 +15,7 @@ window.addEventListener("DOMContentLoaded", function () {
         });
     });
     document.getElementById("aceptar-cookies").addEventListener("click", function () {
-        document.getElementById("cookies").style.bottom = "-130px";
-        window.addEventListener("scroll", function () {
-            document.getElementById("cookies").style.display = "none";
-        });
+        document.getElementById("cookies").style.bottom = "-133px";
     });
 });
 
