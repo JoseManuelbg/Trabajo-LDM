@@ -190,14 +190,11 @@ button{ /*Afecta a todos los botones del index*/
     background-color: transparent;
     border: 0;
     transition: all 500ms;
-<<<<<<< HEAD
-=======
 }
 /* Alerta del principio */
 
 .swal-overlay {
     background-color: #fcf8f369;
->>>>>>> 973dae5 (Cosas varias)
 }
 
 /* Cookies */

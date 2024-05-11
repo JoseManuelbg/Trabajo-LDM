@@ -14,9 +14,22 @@ window.addEventListener("DOMContentLoaded", function () {
             button: "Aceptar",
         });
     });
-    document.getElementById("aceptar-cookies").addEventListener("click", function () {
-        document.getElementById("cookies").style.bottom = "-133px";
-    });
+
+    function aceptarCookies() {
+        document.getElementById("aceptar-cookies").addEventListener("click", function () {
+            document.getElementById("cookies").style.bottom = "-133px";
+            function ocultar() {
+                document.getElementById("cookies").style.display = "none";
+            }
+            setTimeout(ocultar, 700);
+        });
+    }
+
+    if (!localStorage.getItem("aceptarCookies")){
+        aceptarCookies();
+        localStorage.setItem(aceptarCookies, true)
+    }
+
     window.addEventListener("resize", initSlider);
     window.addEventListener("load", initSlider);
 });
