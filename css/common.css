@@ -1,3 +1,4 @@
+
 /*Fuentes*/
   .marcellus-sc-regular {
     font-family: "Marcellus SC", serif;
@@ -22,12 +23,27 @@
   
 
 /* ICONS */
+
 * {
     margin: 0;
     padding: 0;
     font-family: lato;
     scrollbar-width: none;
 }
+
+::-moz-selection { /* Cambia el color del texto seleccionado en mozilla */
+    background-color: #ddd3cc;
+}
+
+::selection { /* Cambia el color del texto seleccionado en otros navegadores */
+    background-color: #ddd3cc;
+}
+
+img { /* Deshabilita que se puedan seleccionar imágenes */
+    user-select: none;
+}
+
+/* ICONS */
 
 .icon {
     width: 30px;
@@ -247,6 +263,7 @@ aside > a > button:hover{
     text-align: left;
     padding: 15px 10px;
     list-style: none;
+    
 }
 
 #sidebar.active {
