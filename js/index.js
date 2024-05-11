@@ -14,30 +14,8 @@ window.addEventListener("DOMContentLoaded", function () {
             button: "Aceptar",
         });
     });
-  document.getElementById("aceptar-cookies").addEventListener("click", function () {
-      document.getElementById("cookies").style.bottom = "-130px";
-        window.addEventListener("scroll", function () {
-            document.getElementById("cookies").style.display = "none";
-        });
-    document.getElementById("imagen-sorteo").addEventListener("click", function () {
-        var validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-        swal({
-            title: "PARTICIPACIÓN EN SORTEO",
-            text: "Email: ",
-            content: "input",
-            icon: "../img/favicon.png",
-            button: "Aceptar",
-        })
-            .then((value) => {
-                if (value != null && validEmail.test(value)) {
-                    swal('Participación enviada correctamente')
-                } else {
-                    swal('Email incorrecto')
-                }
-            });
-
+    document.getElementById("aceptar-cookies").addEventListener("click", function () {
         document.getElementById("cookies").style.bottom = "-133px";
-
     });
 });
 
