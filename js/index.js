@@ -17,6 +17,8 @@ window.addEventListener("DOMContentLoaded", function () {
     document.getElementById("aceptar-cookies").addEventListener("click", function () {
         document.getElementById("cookies").style.bottom = "-133px";
     });
+    window.addEventListener("resize", initSlider);
+    window.addEventListener("load", initSlider);
 });
 
 // Fin alertas
@@ -87,5 +89,4 @@ const initSlider = () => {
     });
 }
 
-window.addEventListener("resize", initSlider);
-window.addEventListener("load", initSlider);
+
