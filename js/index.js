@@ -14,13 +14,11 @@ window.addEventListener("DOMContentLoaded", function () {
             button: "Aceptar",
         });
     });
-<<<<<<< HEAD
-    document.getElementById("aceptar-cookies").addEventListener("click", function () {
-        document.getElementById("cookies").style.bottom = "-130px";
+  document.getElementById("aceptar-cookies").addEventListener("click", function () {
+      document.getElementById("cookies").style.bottom = "-130px";
         window.addEventListener("scroll", function () {
             document.getElementById("cookies").style.display = "none";
         });
-=======
     document.getElementById("imagen-sorteo").addEventListener("click", function () {
         var validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
         swal({
@@ -37,7 +35,9 @@ window.addEventListener("DOMContentLoaded", function () {
                     swal('Email incorrecto')
                 }
             });
->>>>>>> 973dae5 (Cosas varias)
+
+        document.getElementById("cookies").style.bottom = "-133px";
+
     });
 });
 

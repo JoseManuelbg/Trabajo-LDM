@@ -207,7 +207,7 @@ button{ /*Afecta a todos los botones del index*/
     width: 100%;
     height: 130px;
     z-index: 1000;
-    position: absolute;
+    position: sticky;
     bottom: 0px;
     text-align: justify;
     transition: all 500ms linear;
