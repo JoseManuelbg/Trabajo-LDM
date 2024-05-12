@@ -1,7 +1,5 @@
 /*Estilos generales*/
-body {
-    overflow-x: hidden;
-}
+
 
 button{ /*Afecta a todos los botones del index*/
     background-color: #ddd3cc;
