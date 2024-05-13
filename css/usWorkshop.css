@@ -1,0 +1,70 @@
+.contenido{
+    text-align: justify;
+    padding: 0 100px 0 100px;
+    
+}
+
+.descripcion{
+    margin-bottom: 50px;
+    float: right;
+
+}
+
+.titulo{
+    margin-top: 50px;
+    margin-left: 5%;
+    border-bottom: 1px solid black;
+
+}
+
+
+
+.numero{
+    border-radius: 100%;
+    border:1px black solid;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin-top: -20px;
+    float: left;
+    font-size: 30px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.principal{
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 2px black solid;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tabla{
+    margin-left: 37%;
+    margin-right: 40%;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse; 
+    width: 100%; 
+  }
+  
+
+  td, th {
+    border: 1px solid black;
+    padding: 8px; 
+    text-align: left; 
+  }
+  
+
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+ 
+  tr:hover {
+    background-color: #ddd; 
+  }
