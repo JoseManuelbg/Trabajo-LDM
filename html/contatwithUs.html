@@ -8,7 +8,9 @@
     <!-- Hojas de estilo -->
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/contactwithUs.css">
-     <!--Favicon-->
+    <!--JavaScript-->
+    <script src="../js/validacionForumularioCWU.js"></script>
+    <!--Favicon-->
      <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <!--Fuentes-->
     <!--marcellus-sc-regular-->
@@ -68,7 +70,7 @@
 <img src="../img/Logo Dicomo.png" alt="" id="logo">
 </div>
 <div class="formulario">
-    <form action="index.html" method="post" id="formulario">
+    <form action="index.html" method="post" id="formulario" onsubmit="return validaFormulario()">
         <div id="nombre">
         <label>Nombre: </label><br>
         <input type="text" name="ruser" required><br>
@@ -83,7 +85,7 @@
         </div>
         <div id="telefono">
         <label>Telefono:</label><br>
-        <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"><br>
+        <input type="tel" name="rtelefono" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"><br>
         </div>
         <div id="asunto">
         <label>Asunto:</label><br>
@@ -96,6 +98,8 @@
         <div id="enviar">
         <input type="submit" id="enviar">
         </div>
+        <div id="errores"></div>
+
     </form>
     
 
