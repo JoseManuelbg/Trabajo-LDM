@@ -70,8 +70,11 @@ section {
 #formulario > label {
     text-align: left;
     padding: 10px 0 0 0;
+    
 }
-
+/* text-align: left;
+    padding: 10px 0 0 0;
+    */
 #nombre > input:not(input[type="submit"]), #apellido > input:not(input[type="submit"]),
 #email > input:not(input[type="submit"]), #telefono > input:not(input[type="submit"]),
 #asunto > input:not(input[type="submit"]) {
@@ -94,7 +97,6 @@ section {
 }
 
 #email > input {
-    float: left;
     width: 300px;
 }
 
@@ -105,13 +107,11 @@ section {
 #nombre, #email, #asunto {
     margin-left: 10px;
     margin-top: 10px;
-    float: left;
 }
 
 #apellido, #telefono {
     margin-right: 10px;
     margin-top: 10px;
-    float: right;
 }
 
 #asunto > input {
@@ -148,5 +148,25 @@ section {
     background-color: #ddd3cc;
 }
 
+.error-mensaje {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: -10px;
+    text-align: left;
+}
 
+.error-mensaje ul {
+    padding: 0;
+    list-style: none;
+}
+.error-mensaje li {
+    margin-bottom: 5px;
+}
 
+#errores{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid red;
+    display: none;
+}

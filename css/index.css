@@ -82,6 +82,7 @@ button{ /*Afecta a todos los botones del index*/
 
 /* FIN SLIDE INDEX */
 
+
 /*Estilo de las secciones de los carruseles*/
 #carruseles{ /*Contenedor principal*/
     height: 120vh;
@@ -95,7 +96,7 @@ button{ /*Afecta a todos los botones del index*/
     margin-left: 45px;
 }
 
-.carouselP .image-list{
+.carouselP .image-list, .carouselP .image-list1 {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     margin-bottom: 30px;
@@ -103,19 +104,43 @@ button{ /*Afecta a todos los botones del index*/
     overflow-x: auto;
 }
 
-.carouselP .image-list .image-item{
+/*.carouselP .image-list1 {
+    display: flex;
+    grid-template-columns: repeat(10, 1fr);
+    margin-bottom: 30px;
+    font-size: 0;
+    overflow-x: auto;
+    background-color: yellowgreen;
+}*/
+
+.carouselP .image-list .image-item, .carouselP .image-list1 .image-item1{
     
     object-fit: cover;
     margin: 0 10px 0 10px;
 
 }
 
-#carousel1> p{
+.carouselP .image-list1 .image-item1{
+    
+    object-fit: cover;
+    margin: 0 10px 50px 10px;
+    width: 300px;
+   
+}
+
+
+#carousel1 > p{
     
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 10px;
 }
+
+#carousel2 > p{
+    background-color: aquamarine;
+    margin-left: 10px;
+}
+
 .arrows{
     width: 20px;
 }
@@ -171,8 +196,24 @@ button{ /*Afecta a todos los botones del index*/
     cursor: pointer;
   
 }
+#carousel2 .slide-button{
+    position: absolute;
+    top: 600PX;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  
+}
 
 #carousel1 .slide-button#prev-slide{
+    margin-top: 50px;
+    left: 0px;
+    background-color: transparent;
+    border: 0;
+    transition: all 500ms;
+}
+
+#carousel2 .slide-button#prev-slide1{
     margin-top: 50px;
     left: 0px;
     background-color: transparent;
@@ -184,7 +225,18 @@ button{ /*Afecta a todos los botones del index*/
     transform: scale(1.2);
 }
 
+#carousel2 .slide-button#prev-slide1:hover, #carousel2 .slide-button#next-slide1:hover {
+    transform: scale(1.2);
+}
+
 #carousel1 .slide-button#next-slide{
+    margin-top: 50px;
+    right: 0px;
+    background-color: transparent;
+    border: 0;
+    transition: all 500ms;
+}
+#carousel2 .slide-button#next-slide{
     margin-top: 50px;
     right: 0px;
     background-color: transparent;
