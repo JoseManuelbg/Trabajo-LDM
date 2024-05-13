@@ -68,34 +68,35 @@
 <img src="../img/Logo Dicomo.png" alt="" id="logo">
 </div>
 <div class="formulario">
-    <form action="index.html" method="post" id="formulario" onsubmit="return validaFormulario()">
-        <div id="nombre">
+    <form action="index.html" id="formulario" onsubmit="return validaFormulario()" target="_blank">
+        <div id="nombre" class="fragmento">
         <label>Nombre: </label>
         <input type="text" name="ruser">
-        <div id="apellido">
+        </div>
+        <div id="apellido"class="fragmento">
         <label>Apellidos: </label>
         <input type="text" name="rapellido">
         </div>
-        <div id="email">
+        <div id="email" class="fragmento">
         <label>Email: </label>
         <input type="email" name="remail">
         </div>
-        <div id="telefono">
+        <div id="telefono" class="fragmento">
         <label>Telefono:</label>
         <input type="tel" name="rtelefono">
         </div>
-        <div id="asunto">
+        <div id="asunto" class="fragmento">
         <label>Asunto:</label>
         <input type="text">
         </div>
-        <div id="comentario">
+        <div id="comentario" class="fragmento">
         <label>Comentario o Mensaje:</label>
         <textarea name="" id="" cols="48" rows="7"></textarea>
         </div>
-        <div id="enviar">
+        <div id="enviar" class="fragmento">
         <input type="submit" id="enviar">
         </div>
-        <div id="errores"></div>
+        <div id="errores" class="error-mensaje"></div>
 
     </form>
     

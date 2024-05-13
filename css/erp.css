@@ -10,4 +10,10 @@ margin: 50px;
 .content > p{
     text-align: justify;
     padding-bottom: 10px;
+    line-height: 1.2;
 }
+
+body{
+    background-color: #fcf8f3;
+}
+
