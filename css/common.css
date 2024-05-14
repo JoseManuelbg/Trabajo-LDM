@@ -71,7 +71,7 @@ header{
     position: sticky;
     z-index: 1000;
     top: 0px;
-    border-bottom: 3px solid #D1BB9E;
+    border-bottom: 3px solid #9A8263;
 }
 
 header > a {
@@ -255,7 +255,7 @@ aside > a > button:hover{
     width: 400px;
     height: 100%;
     background-color: #ddd3cc;
-    border-right: 3px solid #D1BB9E;
+    border-right: 3px solid #9A8263;
     left: -403px;
     transition: all 700ms linear;
 }
@@ -312,10 +312,32 @@ aside > a > button:hover{
 #imagen-sorteo {
     width: 380px;
     justify-items: center;
-    top: 710px;
+    bottom: 50px;
     margin-left: 10px;
     cursor: pointer;
     position: fixed;
+}
+
+/* Implementación Google */
+
+#google_translate_element {
+    display: grid;
+    width: fit-content;
+    justify-items: center;
+    bottom: 30px;
+    cursor: pointer;
+    position: fixed;
+    left: -200px;
+    transition: all 700ms linear;
+}
+
+#google_translate_element.active {
+    left: 200px;
+}
+
+.skiptranslate {
+    position: fixed;
+    
 }
 
 /* Sidebar: Logo */
@@ -375,3 +397,7 @@ aside > a > button:hover{
 .swal-icon--success__hide-corners {
     background-color: transparent;
 }
+
+
+
+
