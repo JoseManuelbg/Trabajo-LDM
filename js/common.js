@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded", function(){
     btnToggle.addEventListener("click", function() {
         document.getElementById("sidebar").classList.toggle("active");
         document.getElementById("google_translate_element").classList.toggle("active");
+        document.querySelector("body").classList.toggle("active");
         document.getElementById("logo").classList.toggle("animacion");
         document.getElementById("mostrar-subclases1").addEventListener("click", function(){
             document.getElementById("mostrar-subclases1").classList.toggle("animacion");
