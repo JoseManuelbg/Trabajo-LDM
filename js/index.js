@@ -3,14 +3,14 @@ window.addEventListener("DOMContentLoaded", function () {
     swal({
         title: "¡DESCUENTO DEL 10%!",
         text: "Usa el código \"DICOMO10\" y obtén un 10% de descuento en tu primera compra.",
-        icon: "../img/favicon.png",
+        icon: "./img/favicon.png",
         button: "Aceptar!",
     });
     document.getElementById("category-kids").addEventListener("click", function () {
         swal({
             title: "PRÓXIMAMENTE",
             text: "Esta página aún no está disponible, lo estará en breves. Disculpa las molestias",
-            icon: "../img/favicon.png",
+            icon: "./img/favicon.png",
             button: "Aceptar",
         });
     });

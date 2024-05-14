@@ -170,6 +170,10 @@ footer{
     color: black;
 }
 
+.footer-section > a:hover, .footer-section > div> a:hover{
+    text-decoration: underline;
+}
+
 
 /*En vez de que cada uno tenga bordes, que solo el central tenga en la derecha
 y en la izquierda*/
@@ -246,7 +250,7 @@ aside > a > button:hover{
 }
 
 .nombre-red-social {
-    margin-top: 4px;
+    margin-left: 4px;
 }
 
 /* Sidebar */
@@ -268,7 +272,7 @@ aside > a > button:hover{
     color: black;
     text-decoration: none;
     text-align: left;
-    padding: 15px 10px;
+    margin: 15px 10px;
     list-style: none;
     
 }
