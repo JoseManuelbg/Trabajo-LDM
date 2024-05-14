@@ -10,6 +10,7 @@ margin: 50px;
     text-align: center;
     padding-bottom: 10px;
     border-bottom: 1px solid black;
+    display: block;
 }
 .content > p{
     text-align: justify;
@@ -20,4 +21,5 @@ margin: 50px;
 body{
     background-color: #fcf8f3;
 }
+
 
