@@ -1,7 +1,5 @@
 /*Estilos generales*/
-body {
-    overflow-x: hidden;
-}
+
 
 button{ /*Afecta a todos los botones del index*/
     background-color: #ddd3cc;
@@ -113,7 +111,8 @@ button{ /*Afecta a todos los botones del index*/
     background-color: yellowgreen;
 }*/
 
-.carouselP .image-list .image-item, .carouselP .image-list1 .image-item1{
+.carouselP .image-list .image-item{
+
     
     object-fit: cover;
     margin: 0 10px 0 10px;
@@ -125,7 +124,7 @@ button{ /*Afecta a todos los botones del index*/
     object-fit: cover;
     margin: 0 10px 50px 10px;
     width: 300px;
-   
+
 }
 
 
@@ -137,8 +136,15 @@ button{ /*Afecta a todos los botones del index*/
 }
 
 #carousel2 > p{
-    background-color: aquamarine;
+
     margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#carousel2{
+    
+    margin-bottom: 10px;
+
 }
 
 .arrows{
@@ -150,6 +156,7 @@ button{ /*Afecta a todos los botones del index*/
     width: 100%;
     display: flex;
     align-items: center;
+
 }
 
 .slider-scrollbar .scrollbar-track{
@@ -198,10 +205,14 @@ button{ /*Afecta a todos los botones del index*/
 }
 #carousel2 .slide-button{
     position: absolute;
-    top: 600PX;
+
+    top: 1820px;
     height: 50px;
     width: 50px;
     cursor: pointer;
+    background-color: transparent;
+    border-style: none;
+
   
 }
 
