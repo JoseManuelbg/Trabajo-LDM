@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     display: grid;
-    padding: 10px 0px 10px 0px;
+    padding: 40px 0px 10px 0px;
     margin: 0px 30px 0px 30px;
 }
 
@@ -33,7 +33,7 @@ body {
     height: auto;
     box-shadow: -3px 3px 5px #ddd3cc;
     margin-bottom: 50px;
-}
+} 
 
 section {
     padding-top: 50px;
@@ -59,19 +59,35 @@ section {
 }
 
 #formulario {
-    
     align-items: center;
     justify-content: center;
     width: 500px;
     box-sizing: border-box;
+    margin-bottom: 10%;
 
+}
+
+.fragmento{
+    margin-bottom: 6%;
+    margin-top: 6%;
+    margin-left: 3%;
+    text-align: center;
+    align-items: center;
+
+}
+
+input{
+    margin-right: 60%; /*Cambiar en caso de que afecte al nav , está como prueba*/
 }
 
 #formulario > label {
-    text-align: left;
-    padding: 10px 0 0 0;
+    text-align: right;
+    padding: 100%;
+    
 }
-
+/* text-align: left;
+    padding: 10px 0 0 0;
+*/
 #nombre > input:not(input[type="submit"]), #apellido > input:not(input[type="submit"]),
 #email > input:not(input[type="submit"]), #telefono > input:not(input[type="submit"]),
 #asunto > input:not(input[type="submit"]) {
@@ -89,33 +105,10 @@ section {
     height: 30px;
 }
 
-#nombre > input {
-    width: 175px;
-}
-
-#email > input {
-    float: left;
-    width: 300px;
-}
-
-#telefono > input {
-    width: 150px;
-}
-
-#nombre, #email, #asunto {
-    margin-left: 10px;
-    margin-top: 10px;
-    float: left;
-}
 
 #apellido, #telefono {
     margin-right: 10px;
     margin-top: 10px;
-    float: right;
-}
-
-#asunto > input {
-    width: 480px;
 }
 
 #comentario {
@@ -127,9 +120,12 @@ section {
 
 #comentario > textarea {
     background-color: #ddd3cc;
-    font-size: 20px;
-    margin-top: 10px;
+    height: 60px;
+    width: 80%;
+    margin-top: 5px;
     border-radius: 5px;
+    resize: none;
+
 }
 
 #enviar {
@@ -148,5 +144,25 @@ section {
     background-color: #ddd3cc;
 }
 
+.error-message {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: -10px;
+    text-align: left;
+}
 
+.error-message ul {
+    padding: 0;
+    list-style: none;
+}
+.error-message li {
+    margin-bottom: 5px;
+}
 
+#errores{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid red;
+    display: none;
+}

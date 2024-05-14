@@ -80,6 +80,7 @@ button{ /*Afecta a todos los botones del index*/
 
 /* FIN SLIDE INDEX */
 
+
 /*Estilo de las secciones de los carruseles*/
 #carruseles{ /*Contenedor principal*/
     height: 120vh;
@@ -111,6 +112,7 @@ button{ /*Afecta a todos los botones del index*/
 }*/
 
 .carouselP .image-list .image-item{
+
     
     object-fit: cover;
     margin: 0 10px 0 10px;
@@ -125,6 +127,7 @@ button{ /*Afecta a todos los botones del index*/
 
 }
 
+
 #carousel1 > p{
     
     margin-top: 30px;
@@ -133,6 +136,7 @@ button{ /*Afecta a todos los botones del index*/
 }
 
 #carousel2 > p{
+
     margin-left: 10px;
     margin-bottom: 10px;
 }
@@ -140,6 +144,7 @@ button{ /*Afecta a todos los botones del index*/
 #carousel2{
     
     margin-bottom: 10px;
+
 }
 
 .arrows{
@@ -200,12 +205,14 @@ button{ /*Afecta a todos los botones del index*/
 }
 #carousel2 .slide-button{
     position: absolute;
+
     top: 1820px;
     height: 50px;
     width: 50px;
     cursor: pointer;
     background-color: transparent;
     border-style: none;
+
   
 }
 
