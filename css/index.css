@@ -83,7 +83,7 @@ button{ /*Afecta a todos los botones del index*/
 
 /*Estilo de las secciones de los carruseles*/
 #carruseles{ /*Contenedor principal*/
-    height: 120vh;
+    height: 160vh;
     background-color: white;
   
 }
