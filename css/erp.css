@@ -6,6 +6,11 @@ body {
 margin: 50px;
 
 }
+
+.h1{
+text-align: center;
+}
+
 .content > h2{
     text-align: center;
     padding-bottom: 10px;
@@ -22,4 +27,19 @@ body{
     background-color: #fcf8f3;
 }
 
-
+.content {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  h2 {
+    font-family: 'Marcellus SC', serif;
+    font-weight: normal;
+  }
+  p {
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 10px;
+  }
+  ul {
+    margin-bottom: 10px;
+  }
