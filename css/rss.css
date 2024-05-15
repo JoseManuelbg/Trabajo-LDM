@@ -4,18 +4,13 @@
     }
     .content > h2{
         text-align: center;
-        padding-bottom: 10px;
         border-bottom: 1px solid black;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
     .content > p{
-        text-align: justify;
-        padding-bottom: 10px;
-        
+        text-align: justify;       
     }
     body{
         background-color: #fcf8f3;
-    }
-
-    h2{
-        margin-bottom: 2%;
     }
