@@ -12,6 +12,9 @@
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <!-- Scripts -->
     <script src="../js/common.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="../js/categorias.js"></script>
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,15 +25,21 @@
     <!--marcellus-sc-regular-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marcellus+SC&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marcellus+SC&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!--Libre Baskerville-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus+SC&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-   <!--Open Sans-->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus+SC&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus+SC&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus+SC&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +47,7 @@
     <header>
         <img src="../img/simbolos/Menu_hamburguesa.png" alt="Simbolo menú" class="icon" id="abrir-menu">
         <a href="../index.html">
-            <h1 class="marcellus-sc-regular">DiComo</h1>
+            <h1 class="marcellus-sc-regular notranslate">DiComo</h1>
         </a>
         <div id="rightheader">
             <div id="searchBar">
@@ -73,7 +82,7 @@
             </li>
             <li>
                 <div class="categoria-sidebar">
-                    <a href="" class="titulo-sidebar">Restauración</a>
+                    <a href="./restauracion.html" class="titulo-sidebar">Restauración</a>
                     <img src="../img/simbolos/mdi--plus.png" alt="" id="mostrar-subclases2">
                 </div>
                 <ul>
@@ -84,11 +93,13 @@
             <li><a href="./aboutUs.html" class="titulo-sidebar">Sobre nosotros</a></li>
         </ul>
         <img src="../img/sidebar/461-menu-sorteo-Mayo_es_cnqb8n.webp" alt="" id="imagen-sorteo">
+        <div id="google_translate_element" class="google"></div>
     </nav>
     <!--Primera sección-->
     <div class="tituloPagina">
         <h1 class="tituloPrincipal marcellus-sc-regular">Sofás</h1>
-        <p class="piePagina libre-baskerville-regular">Sumérgete en la comodidad y el estilo incomparables de nuestros sofás en Dicomo. Encuentra el equilibrio
+        <p class="piePagina libre-baskerville-regular">Sumérgete en la comodidad y el estilo incomparables de nuestros
+            sofás en Dicomo. Encuentra el equilibrio
             perfecto entre elegancia y confort para transformar
             tu espacio en un oasis de relajación.
         </p>
@@ -96,49 +107,56 @@
     <!--Galería de fotos 1-->
     <div class="filas">
         <div class="producto">
-            <a href="./productos/sofa1.html"><img src="../img/Fotos Productos/Sofas/Sofa1/FotoPrincipal Sofa1.webp" alt="Sofa1" class="fotoPrincipal"></a>
+            <a href="./productos/sofa1.html"><img src="../img/Fotos Productos/Sofas/Sofa1/FotoPrincipal Sofa1.webp"
+                    alt="Sofa1" class="fotoPrincipal"></a>
             <div class="pieDeFoto">
                 <div class="contenido">
                     <p class="titulo">Sofá Modular de 3 Piezas Kira</p>
                     <p class="precio">1050,95€</p>
                 </div>
                 <button id="boton-corazon">
-                    <img src="../../img/simbolos/Corazon_hueco.png" alt="SimboloCorazon" class="corazon" id="corazon-vacio">
+                    <img src="../img/simbolos/Corazon_hueco.png" alt="SimboloCorazon" class="corazon"
+                        id="corazon-vacio">
                 </button>
                 <button id="boton-corazon-relleno">
-                    <img src="../../img/simbolos/Corazon_relleno.png" alt="SimboloCorazon" class="corazon" id="corazon-relleno">
+                    <img src="../img/simbolos/Corazon_relleno.png" alt="SimboloCorazon" class="corazon"
+                        id="corazon-relleno">
                 </button>
             </div>
         </div>
         <div class="producto">
-            <a href="./productos/sofa2.html"><img src="../img/Fotos Productos/Sofas/Sofa2/FotoPrincipal Sofa2.webp" alt="Sofa2"
-                class="fotoPrincipal"></a>
+            <a href="./productos/sofa2.html"><img src="../img/Fotos Productos/Sofas/Sofa2/FotoPrincipal Sofa2.webp"
+                    alt="Sofa2" class="fotoPrincipal"></a>
             <div class="pieDeFoto">
                 <div class="contenido">
                     <p class="titulo">Sofá Reclinable de 3 Plazas Brina</p>
                     <p class="precio">254,95€</p>
                 </div>
                 <button id="boton-corazon">
-                    <img src="../../img/simbolos/Corazon_hueco.png" alt="SimboloCorazon" class="corazon" id="corazon-vacio">
+                    <img src="../img/simbolos/Corazon_hueco.png" alt="SimboloCorazon" class="corazon"
+                        id="corazon-vacio">
                 </button>
                 <button id="boton-corazon-relleno">
-                    <img src="../../img/simbolos/Corazon_relleno.png" alt="SimboloCorazon" class="corazon" id="corazon-relleno">
+                    <img src="../img/simbolos/Corazon_relleno.png" alt="SimboloCorazon" class="corazon"
+                        id="corazon-relleno">
                 </button>
             </div>
         </div>
         <div class="producto">
-            <a href="./productos/sofa3.html"><img src="../img/Fotos Productos/Sofas/Sofa3/FotoPrincipalSofa3.webp" alt="Sofa3"
-                class="fotoPrincipal"></a>
+            <a href="./productos/sofa3.html"><img src="../img/Fotos Productos/Sofas/Sofa3/FotoPrincipalSofa3.webp"
+                    alt="Sofa3" class="fotoPrincipal"></a>
             <div class="pieDeFoto">
                 <div class="contenido">
                     <p class="titulo">Sofá Cama de 2 Plazas en Pana Browni</p>
                     <p class="precio">745,95€</p>
                 </div>
                 <button id="boton-corazon">
-                    <img src="../../img/simbolos/Corazon_hueco.png" alt="SimboloCorazon" class="corazon" id="corazon-vacio">
+                    <img src="../img/simbolos/Corazon_hueco.png" alt="SimboloCorazon" class="corazon"
+                        id="corazon-vacio">
                 </button>
                 <button id="boton-corazon-relleno">
-                    <img src="../../img/simbolos/Corazon_relleno.png" alt="SimboloCorazon" class="corazon" id="corazon-relleno">
+                    <img src="../img/simbolos/Corazon_relleno.png" alt="SimboloCorazon" class="corazon"
+                        id="corazon-relleno">
                 </button>
             </div>
         </div>
@@ -146,50 +164,56 @@
     <!--Galería de fotos 2-->
     <div class="filas" id="ultimaFila">
         <div class="producto">
-            <a href="./productos/sofa4.html"><img src="../img/Fotos Productos/Sofas/Sofa4/FotoPrincipal Sofa4.webp" alt="Sofa4"
-                class="fotoPrincipal"></a>
+            <a href="./productos/sofa4.html"><img src="../img/Fotos Productos/Sofas/Sofa4/FotoPrincipal Sofa4.webp"
+                    alt="Sofa4" class="fotoPrincipal"></a>
             <div class="pieDeFoto">
                 <div class="contenido">
                     <p class="titulo">Sofá Cama Brisa de 4 Plazas</p>
                     <p class="precio">346,95€</p>
                 </div>
                 <button id="boton-corazon">
-                    <img src="../../img/simbolos/Corazon_hueco.png" alt="SimboloCorazon" class="corazon" id="corazon-vacio">
+                    <img src="../img/simbolos/Corazon_hueco.png" alt="SimboloCorazon" class="corazon"
+                        id="corazon-vacio">
                 </button>
                 <button id="boton-corazon-relleno">
-                    <img src="../../img/simbolos/Corazon_relleno.png" alt="SimboloCorazon" class="corazon" id="corazon-relleno">
+                    <img src="../img/simbolos/Corazon_relleno.png" alt="SimboloCorazon" class="corazon"
+                        id="corazon-relleno">
                 </button>
             </div>
         </div>
         <div class="producto">
-            <a href="./productos/sofa5.html"><img src="../img/Fotos Productos/Sofas/Sofa5/FotoPrincipal Sofa5.webp" alt="Sofa5"
-                class="fotoPrincipal"></a>
+            <a href="./productos/sofa5.html"><img src="../img/Fotos Productos/Sofas/Sofa5/FotoPrincipal Sofa5.webp"
+                    alt="Sofa5" class="fotoPrincipal"></a>
             <div class="pieDeFoto">
                 <div class="contenido">
                     <p class="titulo">Sofá Modular de 2 Piezas Natura</p>
                     <p class="precio">560,95€</p>
                 </div>
                 <button id="boton-corazon">
-                    <img src="../../img/simbolos/Corazon_hueco.png" alt="SimboloCorazon" class="corazon" id="corazon-vacio">
+                    <img src="../img/simbolos/Corazon_hueco.png" alt="SimboloCorazon" class="corazon"
+                        id="corazon-vacio">
                 </button>
                 <button id="boton-corazon-relleno">
-                    <img src="../../img/simbolos/Corazon_relleno.png" alt="SimboloCorazon" class="corazon" id="corazon-relleno">
+                    <img src="../img/simbolos/Corazon_relleno.png" alt="SimboloCorazon" class="corazon"
+                        id="corazon-relleno">
                 </button>
             </div>
         </div>
         <div class="producto">
-            <a href="./productos/sofa6.html"><img src="../img/Fotos Productos/Sofas/Sofa6/FotoPrincipal Sofa6.webp" alt="Sofa6"
-                class="fotoPrincipal"></a>
+            <a href="./productos/sofa6.html"><img src="../img/Fotos Productos/Sofas/Sofa6/FotoPrincipal Sofa6.webp"
+                    alt="Sofa6" class="fotoPrincipal"></a>
             <div class="pieDeFoto">
                 <div class="contenido">
                     <p class="titulo">Sofá Modular de 2 Piezas Loja</p>
                     <p class="precio">429,95€</p>
                 </div>
                 <button id="boton-corazon">
-                    <img src="../../img/simbolos/Corazon_hueco.png" alt="SimboloCorazon" class="corazon" id="corazon-vacio">
+                    <img src="../img/simbolos/Corazon_hueco.png" alt="SimboloCorazon" class="corazon"
+                        id="corazon-vacio">
                 </button>
                 <button id="boton-corazon-relleno">
-                    <img src="../../img/simbolos/Corazon_relleno.png" alt="SimboloCorazon" class="corazon" id="corazon-relleno">
+                    <img src="../img/simbolos/Corazon_relleno.png" alt="SimboloCorazon" class="corazon"
+                        id="corazon-relleno">
                 </button>
             </div>
         </div>
@@ -199,7 +223,7 @@
         <h3>¡Únete a nuestro curso de restauración!</h3><br>
         <h3>Y disfruta de un 10% de descuento</h3>
         <!-- Hacer que el 10% sea una variable JS para poderlo cambiar en todas las páginas a la vez -->
-        <button>¡Únete aquí!</button>
+        <a href="./course_register.html"><button>¡Únete aquí!</button></a>
     </aside>
     <!--Fin del spam-->
     <!-- Footer -->
@@ -208,6 +232,7 @@
             <div class="footer-section">
                 <h3>CONTACTO</h3>
                 <a href="mailto:dicomo@gmail.com">dicomo@gmail.com</a>
+                <a href="./contatwithUs.html">Centro de contacto</a>
             </div>
             <div class="footer-section">
                 <h3>¿QUIÉNES SOMOS?</h3>
@@ -229,6 +254,11 @@
                             alt="Logo Instagram"></a>
                     <a href="https://www.instagram.com/" class="nombre-red-social">Instagram</a>
                 </div>
+                <div class="red-social">
+                    <a href="https://wa.me//+34609336150"><img src="../img/simbolos/nimbus--whatsapp.svg"
+                            alt="Logo WhatsApp" width="19px"></a>
+                    <a href="https://wa.me//+34609336150" class="nombre-red-social">WhatsApp</a>
+                </div>
 
             </div>
         </div>
@@ -242,7 +272,15 @@
             <img src="../img/simbolos/LogoPayPal.png" alt="Logo PayPal" class="payments-methods">
             <img src="../img/simbolos/LogoVisa.png" alt="Logo VISA" class="payments-methods">
         </div>
-        <p id="legal">&copy; DICOMO · All rights reserved</p>
+        <p id="legal" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a
+                href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer">Dicomo is licensed under CC BY-NC 4.0<img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
     </footer>
 </body>
 
