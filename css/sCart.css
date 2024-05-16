@@ -1,5 +1,5 @@
 .main{
-    background-color: antiquewhite;
+    background-color: #fcf8f3;
     height: 150vh;
     display: flex;
   justify-content: center;
@@ -21,7 +21,8 @@
     height: 100%;
     width: 1000px;
     background-color: #ddd3cc;
-    overflow-x: scroll;
+    overflow-y: scroll;
+    scrollbar-width: thin;
     
 }
 .price-container{
@@ -125,7 +126,6 @@
 
 
 .price-counters {
-    width: 50%;
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -139,7 +139,7 @@
     background-color: white;
     margin-right: 20px;
     border: 1px solid black;
-    width: 50%;
+    width: 100px;
 }
 
 .buttonsStyle>button {

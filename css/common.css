@@ -7,13 +7,13 @@ body.active {
 }
 
 /*Fuentes*/
-  .marcellus-sc-regular {
+  .marcellus-sc-regular, .swal-title {
     font-family: "Marcellus SC", serif;
     font-weight: 400;
     font-style: normal;
   }
 
-  .libre-baskerville-regular {
+  .libre-baskerville-regular, .swal-text {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
