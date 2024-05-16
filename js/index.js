@@ -36,10 +36,10 @@ window.addEventListener("DOMContentLoaded", function () {
 
 // Fin alertas
 
-const initSlider = () => {
-    const imageList = document.querySelector(".carouselP .image-list");
-    const slideButtons = document.querySelectorAll(".carouselP .slide-button");
-    const sliderScrollbar = document.querySelector(".carouselP .slider-scrollbar");
+const initSlider = (carouselContainer) => {
+    const imageList = carouselContainer.querySelector(" .image-list");
+    const slideButtons = carouselContainer.querySelectorAll(".slide-button");
+    const sliderScrollbar = carouselContainer.querySelector(".slider-scrollbar");
     const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
@@ -76,7 +76,7 @@ const initSlider = () => {
     // Deslizar imágenes según los clicks de los botones de slide
     slideButtons.forEach(button => {
         button.addEventListener("click", () => {
-            const direction = button.id === "prev-slide" ? -1 : 1;
+            const direction = button.classList.contains("prev-slide") ? -1 : 1;
             const scrollAmount = imageList.clientWidth * direction;
             imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
         });
@@ -100,6 +100,15 @@ const initSlider = () => {
         updateScrollThumbPosition();
         handleSlideButtons();
     });
+
+    // Inicializar el estado de los botones de slide y del scrollbar thumb
+    handleSlideButtons();
+    updateScrollThumbPosition();
+
 }
-
-
+document.addEventListener("DOMContentLoaded", () => {
+    const carousels = document.querySelectorAll(".carouselP");
+    carousels.forEach(carousel => {
+        initSlider(carousel);
+    });
+});
