@@ -23,11 +23,9 @@ body {
     transition: all 700ms;
 }
 
-.fila-galeria > div:hover{
+.fila-galeria > div {
     transform: scale(1.1);
-    text-decoration: underline;
 }
-
 
 #ultima-fila {
     border-bottom: 1px solid black;

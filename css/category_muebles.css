@@ -57,6 +57,12 @@ body {
     width: 400px;;
     display: block;
 }
+
+.pieDeFoto:hover, .contenido > .titulo:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .contenido{
     width: fit-content;
     float: left;
