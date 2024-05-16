@@ -89,21 +89,23 @@ button{ /*Afecta a todos los botones del index*/
 
 /* FIN SLIDE INDEX */
 
-
+/*CARROUSEL*/
 /*Estilo de las secciones de los carruseles*/
 #carruseles{ /*Contenedor principal*/
-    height: 160vh;
+    height: 140vh;
     background-color: white;
   
 }
 
+/* Contenedor de cada carrusel */
 .carouselP{
     height: 50%;
     width: 95%;
     margin-left: 45px;
 }
 
-.carouselP .image-list, .carouselP .image-list1 {
+/* Estilos de la lista de imágenes */
+.carouselP .image-list {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     margin-bottom: 30px;
@@ -111,61 +113,43 @@ button{ /*Afecta a todos los botones del index*/
     overflow-x: auto;
 }
 
-/*.carouselP .image-list1 {
-    display: flex;
-    grid-template-columns: repeat(10, 1fr);
-    margin-bottom: 30px;
-    font-size: 0;
-    overflow-x: auto;
-    background-color: yellowgreen;
-}*/
-
-.carouselP .image-list .image-item{
-
-    
+/* Estilos de los ítems de la lista de imágenes */
+.carouselP .image-item{
     object-fit: cover;
     margin: 0 10px 0 10px;
-
 }
 
-.carouselP .image-list1 .image-item1{
-    
+.carouselP .image-item1{
     object-fit: cover;
-    margin: 0 10px 50px 10px;
+    margin: 0 10px 40px 10px;
     width: 300px;
-
 }
 
-
+/*Estilos de los titulos*/
 #carousel1 > p{
-    
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 10px;
+    font-size: 20px;
 }
 
 #carousel2 > p{
-
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
 }
 
-#carousel2{
-    
-    margin-bottom: 10px;
-
-}
-
+/* Estilos de las flechas */
 .arrows{
     width: 20px;
 }
 
+/* Estilos de la barra de scroll del carrusel */
 #carruseles .slider-scrollbar{
     height: 24px;
     width: 100%;
     display: flex;
     align-items: center;
-
 }
 
 .slider-scrollbar .scrollbar-track{
@@ -188,6 +172,7 @@ button{ /*Afecta a todos los botones del index*/
     cursor: grab;
 }
 
+/*Arrastre de la barra de desplazamiento*/
 .slider-scrollbar .scrollbar-thumb:active{
     cursor: grabbing;
     height: 8px;
@@ -204,65 +189,41 @@ button{ /*Afecta a todos los botones del index*/
 }
 
 /* Botones del carrusel */
-#carousel1 .slide-button{
+.carouselP .slide-button {
     position: absolute;
-    top: 1200PX;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-  
-}
-#carousel2 .slide-button{
-    position: absolute;
-
-    top: 1820px;
+    top: 50%;
     height: 50px;
     width: 50px;
     cursor: pointer;
     background-color: transparent;
     border-style: none;
-
-  
 }
 
-#carousel1 .slide-button#prev-slide{
-    margin-top: 50px;
+/*Altura de los botones*/
+#carousel1 .slide-button {
+    top: 1300px;
+}
+
+#carousel2 .slide-button {
+    top: 2010px;
+}
+
+/*Estilo de los dos botones, alineacion izq y der*/
+.carouselP .slide-button.prev-slide {
     left: 0px;
-    background-color: transparent;
-    border: 0;
     transition: all 500ms;
 }
 
-#carousel2 .slide-button#prev-slide1{
-    margin-top: 50px;
-    left: 0px;
-    background-color: transparent;
-    border: 0;
+.carouselP .slide-button.next-slide {
+    right: 0px;
     transition: all 500ms;
 }
 
-#carousel1 .slide-button#prev-slide:hover, #carousel1 .slide-button#next-slide:hover {
+.carouselP .slide-button:hover {
     transform: scale(1.2);
 }
 
-#carousel2 .slide-button#prev-slide1:hover, #carousel2 .slide-button#next-slide1:hover {
-    transform: scale(1.2);
-}
 
-#carousel1 .slide-button#next-slide{
-    margin-top: 50px;
-    right: 0px;
-    background-color: transparent;
-    border: 0;
-    transition: all 500ms;
-}
-#carousel2 .slide-button#next-slide{
-    margin-top: 50px;
-    right: 0px;
-    background-color: transparent;
-    border: 0;
-    transition: all 500ms;
-}
 /* Alerta del principio */
 
 .swal-overlay {
