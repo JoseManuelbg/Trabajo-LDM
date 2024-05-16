@@ -184,6 +184,10 @@ y en la izquierda*/
 
 }
 
+.footer-section .red-social:nth-child(4) > a> img  {
+    width: 19px;
+    
+}
 /*Chorizaco de codigo que se encarga enteramente de colocar los metodos de pago abajo*/
 
 #payMethodContainer{
