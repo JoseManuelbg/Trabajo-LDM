@@ -64,27 +64,40 @@ section {
     width: 500px;
     box-sizing: border-box;
     margin-bottom: 10%;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
 
 }
 
 .fragmento{
     margin-bottom: 6%;
-    margin-top: 6%;
-    margin-left: 3%;
-    display: flex;
+    margin-top: 8%;
     text-align: center;
     align-items: center;
-
+    width: 100%;
 }
 
 input{
-    margin-right: 60%; /*Cambiar en caso de que afecte al nav , está como prueba*/
+    
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom:white 1px solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #222;
+
 }
 
 #formulario > label {
     text-align: right;
     padding: 100%;
-    
 }
 /* text-align: left;
     padding: 10px 0 0 0;
@@ -113,31 +126,28 @@ input{
 }
 
 #comentario {
-    margin-left: 10px;
     margin-top: 10px;
     margin-right: 10px;
-    float: left;
 }
 
 #comentario > textarea {
     background-color: #ddd3cc;
     height: 60px;
     width: 80%;
-    margin-top: 5px;
+
     border-radius: 5px;
     resize: none;
+    align-items: center;
 
 }
 
 #enviar {
-    clear: both;
-    margin: 21px 90px 0px 90px;
-    display: grid;
+    align-items: center;
+
 }
 #enviar > input[type="submit"] {
     border: 1px solid #ddd3cc;
     text-align: center;
-    padding: 3px 4px 3px 4px;
     border-radius: 5px;
 }
 
@@ -148,7 +158,6 @@ input{
 .error-message {
     color: #ff0000;
     font-size: 12px;
-    margin-top: -10px;
     text-align: left;
 }
 
@@ -166,4 +175,5 @@ input{
     padding: 20px;
     border: 1px solid red;
     display: none;
+    margin-bottom: 15px;
 }

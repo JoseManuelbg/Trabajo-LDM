@@ -18,8 +18,7 @@ body {
 }
 
 .formulario > input:hover{
-    background-color: #ede7e2;
-    
+    background-color: #ede7e2;  
 }
 
 .container{
@@ -61,7 +60,7 @@ color: black;
     outline: none;
     padding: .2rem 0;
     font-size: .9rem;
-    color: white;
+    color: #222;
 
 }
 
