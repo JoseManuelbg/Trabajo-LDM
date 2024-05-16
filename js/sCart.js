@@ -1,24 +1,34 @@
 window.addEventListener("DOMContentLoaded", function () {
     let counterN = 0; // Inicializamos el contador en 0
-    const add = document.getElementById("addProduct");
-    const less = document.getElementById("removeProduct");
-    let text = document.getElementById("countText");
+    const add = document.querySelectorAll("#addProduct");
+    const less = document.querySelectorAll("#removeProduct");
+    let text = document.querySelectorAll("#countText");
     let totalPrice = document.getElementById("precio").textContent; // Precio del producto
-    let total = document.getElementById("total");
+    let total = document.querySelectorAll("#total");
 
-    add.addEventListener("click", function () {
-        counterN++;
-        text.textContent = counterN;
-        updateTotal();
+    add.forEach(element => {
+        element.addEventListener("click", function () {
+            counterN++;
+            text.forEach(element2 => {
+                element2.textContent = counterN;
+                updateTotal();
+            });
+            
+        });
     });
-
-    less.addEventListener("click", function () {
-        if (counterN >= 1) {
-            counterN--;
-            text.textContent = counterN;
-            updateTotal();
-        }
+    
+    less.forEach(element => {
+        element.addEventListener("click", function () {
+            if (counterN >= 1) {
+                counterN--;
+                text.forEach(element2 => {
+                    element2.textContent = counterN;
+                    updateTotal();
+                });
+            }
+        });
     });
+    
 
     function updateTotal() {
         let subtotal = (counterN * totalPrice).toFixed(2);

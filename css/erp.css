@@ -17,10 +17,11 @@ text-align: center;
     border-bottom: 1px solid black;
     display: block;
 }
-.content > p{
+.content > p, .content > dl > dd {
     text-align: justify;
-    padding-bottom: 10px;
+    padding: 10px 0;
     line-height: 1.2;
+    font-family: 'Libre Baskerville', serif;
 }
 
 body{
