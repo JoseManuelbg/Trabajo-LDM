@@ -32,7 +32,7 @@ function validaFormulario(){
         let expresion = /^\d{9}$/;
         if (!expresion.test(telefono)) {
 
-            errores.push("El telefono deve tener minimo nueve digitos");
+            errores.push("El telefono debe tener minimo nueve digitos");
         }
     }else{
         errores.push("El telefono debe tener minimo nueve digitos");
