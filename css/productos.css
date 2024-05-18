@@ -41,7 +41,8 @@ h4 {
     margin-bottom: 50px;
 }
 
-.foto-principal, .foto-principal-blanca {
+.foto-principal,
+.foto-principal-blanca {
     width: 500px;
     height: auto;
     display: inline-block;
@@ -49,7 +50,8 @@ h4 {
     display: none;
 }
 
-.foto-principal.active-img, .foto-principal-blanca.active-img {
+.foto-principal.active-img,
+.foto-principal-blanca.active-img {
     display: block;
 }
 
@@ -65,6 +67,7 @@ h4 {
     width: fit-content;
     float: left;
     font-size: 23px;
+    font-family: 'Marcellus SC', serif;
 }
 
 #referencia {
@@ -72,12 +75,14 @@ h4 {
     margin: 0px 0px 0px 0px;
     width: fit-content;
     clear: left;
+    font-family: 'Libre Baskerville', serif;
 }
 
 #precio {
     width: fit-content;
     float: left;
     margin: 10px 0px 0px 0px;
+    font-family: 'Libre Baskerville', serif;
 }
 
 #iva {
@@ -85,6 +90,7 @@ h4 {
     font-size: 13px;
     float: left;
     margin: 13px 0px 0px 1px;
+    font-family: 'Libre Baskerville', serif;
 }
 
 /* Botón corazón */
@@ -139,7 +145,7 @@ h4 {
 
 .color.active-color {
     border: 2px solid lightgrey;
-    
+
 }
 
 .color:hover {
@@ -153,6 +159,11 @@ h4 {
 .descripcion {
     border-top: 1px solid black;
     padding-bottom: 20px;
+    
+}
+
+.descripcion > p {
+    font-family: 'Libre Baskerville', serif;
 }
 
 .contador-unidades {
@@ -197,11 +208,13 @@ h4 {
 
 
 
-.imagenes-secundarias.active-img, .imagenes-secundarias-blancas.active-img {
+.imagenes-secundarias.active-img,
+.imagenes-secundarias-blancas.active-img {
     display: block;
 }
 
-.imagenes-secundarias, .imagenes-secundarias-blancas {
+.imagenes-secundarias,
+.imagenes-secundarias-blancas {
     width: 350px;
     transition: all 300ms;
     position: relative;
@@ -289,13 +302,13 @@ h4 {
 }
 
 /* Imagenes comprados juntos */
-.fotoPrincipal{
+.fotoPrincipal {
     width: 400px;
 }
 
-.producto:hover{
+.producto:hover {
     transform: scale(1.1);
-     
+
 }
 
 .fila-comprados-juntos {
@@ -308,20 +321,23 @@ h4 {
     grid-auto-flow: column;
 }
 
-.titulo{
+.titulo {
     width: fit-content;
     float: left;
     box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
 }
-.precio{
+
+.precio {
     width: fit-content;
     clear: left;
     box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
 }
 
-.producto{
+.producto {
     width: 400px;
-    transition: all .5s;  
+    transition: all .5s;
     cursor: pointer;
 }
 
@@ -339,21 +355,21 @@ h4 {
     transform: scale(1.2);
 }
 
-.contenido{
+.contenido {
     width: fit-content;
     float: left;
 }
 
 #comprados-juntos {
-    margin-left: 150px;
+    text-align: center;
+    font-family: 'Marcellus SC';
 }
 
-.contenido > a > p{
+.contenido>a>p {
     text-decoration: none;
     color: black;
 }
 
-.contenido > a > p:hover{
+.contenido>a>p:hover {
     text-decoration: underline;
 }
-

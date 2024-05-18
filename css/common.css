@@ -168,6 +168,7 @@ footer{
 .footer-section > a, .footer-section > div> a{
     text-decoration: none;
     color: black;
+    font-size: 13px;
 }
 
 .footer-section > a:hover, .footer-section > div> a:hover{
@@ -255,6 +256,7 @@ aside > a > button:hover{
 
 .nombre-red-social {
     margin-left: 4px;
+    margin-top: 2.75px;
 }
 
 /* Sidebar */

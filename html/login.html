@@ -1,177 +1,173 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Hojas de estilo-->
-        <link rel="stylesheet" href="../css/common.css">
-        <link rel="stylesheet" href="../css/form-style.css"> <!-- Enlazamos archivo de css -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <!-- Importamos fuente Roboto (Grosor 400 y 700) [líneas: 8,9,10] -->
-        <!--Favicon-->
-        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
-        <!--Fuentes-->
-        <!--JavaScript-->
-        <script src="../js/form-script.js"></script>
-        <!--marcellus-sc-regular-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marcellus+SC&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-
-        <!--Scripts-->
-        <script src="../js/common.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Hojas de estilo-->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css"> <!-- Enlazamos archivo de css -->
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <!--Scripts-->
+    <script src="../js/common.js"></script>
+    <script src="../js/login.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
-        <!--Libre Baskerville-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus+SC&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
-        <!--Open Sans-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus+SC&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
-        <title>Inicio Sesión</title>
-    </head>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--Fuentes-->
+    <!--marcellus-sc-regular-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marcellus+SC&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Libre Baskerville-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus+SC&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus+SC&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Dicomo: Iniciar Sesión</title>
+</head>
 
-    <body>
-        <!--Header y navBar-->
-        <header>
-            <img src="../img/simbolos/Menu_hamburguesa.png" alt="Simbolo menú" class="icon" id="abrir-menu">
-            <a href="../index.html">
-                <h1 class="marcellus-sc-regular notranslate">DiComo</h1>
-            </a>
-            <div id="rightheader">
-                <div id="searchBar">
-                    <input type="text">
-                    <a href="./categories.html"><img src="../img/simbolos/Lupa_busqueda.png" alt="Simbolo lupa"
-                            class="icon"></a>
-                </div>
-                <a href="./login.html"><img src="../img/simbolos/User.png" alt="Simbolo usuario" class="icon"></a>
-                <a href="./sCart.html"><img src="../img/simbolos/Carrito.png" alt="Simbolo carrito de compra"
+<body>
+    <!--Header y navBar-->
+    <header>
+        <img src="../img/simbolos/Menu_hamburguesa.png" alt="Simbolo menú" class="icon" id="abrir-menu">
+        <a href="../index.html">
+            <h1 class="marcellus-sc-regular notranslate">DiComo</h1>
+        </a>
+        <div id="rightheader">
+            <div id="searchBar">
+                <input type="text">
+                <a href="./categories.html"><img src="../img/simbolos/Lupa_busqueda.png" alt="Simbolo lupa"
                         class="icon"></a>
             </div>
-        </header>
-    
-        <nav id="sidebar">
-            <ul>
-                <li>
-                    <img src="../img/favicon.png" alt="" id="logo">
-                </li>
-                <li>
-                    <div class="categoria-sidebar">
-                        <a href="./categories.html" class="titulo-sidebar">Nuestros muebles</a>
-                        <img src="../img/simbolos/mdi--plus.png" alt="" class="cross" id="mostrar-subclases1">
-                    </div>
-                    <ul>
-                        <li class="subclase-sidebar1"><a href="./category_chair.html">Sillas</a></li>
-                        <li class="subclase-sidebar1"><a href="./category_table.html">Mesas</a></li>
-                        <li class="subclase-sidebar1"><a href="./category_sofa.html">Sofás</a></li>
-                        <li class="subclase-sidebar1"><a href="./category_aparadores.html">Aparadores</a></li>
-                        <li class="subclase-sidebar1"><a href="./category_lamparas.html">Lámparas</a></li>
-                        <li class="subclase-sidebar1"><a href="./category_taburetes.html">Taburetes</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="categoria-sidebar">
-                        <a href="./restauracion.html" class="titulo-sidebar">Restauración</a>
-                        <img src="../img/simbolos/mdi--plus.png" alt="" id="mostrar-subclases2">
-                    </div>
-                    <ul>
-                        <li class="subclase-sidebar2"><a href="./usWorkshop.html">Nuestros talleres</a></li>
-                        <li class="subclase-sidebar2"><a href="./course_register.html">Inscríbete</a></li>
-                    </ul>
-                </li>
-                <li><a href="./aboutUs.html" class="titulo-sidebar">Sobre nosotros</a></li>
-            </ul>
-            <img src="../img/sidebar/461-menu-sorteo-Mayo_es_cnqb8n.webp" alt="" id="imagen-sorteo">
-            <div id="google_translate_element" class="google"></div>
-        </nav>
-        <div class="container">
-            <form class="formulario" action="../index.html">
-                <img src="../img/favicon.png" id="logo">
-                <h2 class="cuenta">Inicia Sesión</h2>
-                <label>Email:</label>
-                <input type="email">
-                <label>Contraseña:</label>
-                <input type="password" >
-                <input type="submit" value="Registrarse" id="registro">
-            </form>
+            <a href="./login.html"><img src="../img/simbolos/User.png" alt="Simbolo usuario" class="icon"></a>
+            <a href="./sCart.html"><img src="../img/simbolos/Carrito.png" alt="Simbolo carrito de compra"
+                    class="icon"></a>
         </div>
+    </header>
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <img src="../img/favicon.png" alt="" id="logo">
+            </li>
+            <li>
+                <div class="categoria-sidebar">
+                    <a href="./categories.html" class="titulo-sidebar">Nuestros muebles</a>
+                    <img src="../img/simbolos/mdi--plus.png" alt="" class="cross" id="mostrar-subclases1">
+                </div>
+                <ul>
+                    <li class="subclase-sidebar1"><a href="./category_chair.html">Sillas</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_table.html">Mesas</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_sofa.html">Sofás</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_aparadores.html">Aparadores</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_lamparas.html">Lámparas</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_taburetes.html">Taburetes</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="categoria-sidebar">
+                    <a href="./restauracion.html" class="titulo-sidebar">Restauración</a>
+                    <img src="../img/simbolos/mdi--plus.png" alt="" id="mostrar-subclases2">
+                </div>
+                <ul>
+                    <li class="subclase-sidebar2"><a href="./usWorkshop.html">Nuestros talleres</a></li>
+                    <li class="subclase-sidebar2"><a href="./course_register.html">Inscríbete</a></li>
+                </ul>
+            </li>
+            <li><a href="./aboutUs.html" class="titulo-sidebar">Sobre nosotros</a></li>
+        </ul>
+        <img src="../img/sidebar/461-menu-sorteo-Mayo_es_cnqb8n.webp" alt="" id="imagen-sorteo">
+        <div id="google_translate_element" class="google"></div>
+    </nav>
+    <!-- Contenido -->
+    <div class="container">
+        <form class="formulario" action="../index.html">
+            <img src="../img/favicon.png" id="logo">
+            <h2 class="cuenta marcellus-sc-regular">Inicia Sesión</h2>
+            <label class="libre-baskerville-regular">Email:</label>
+            <input type="email">
+            <label class="libre-baskerville-regular">Contraseña:</label>
+            <input type="password">
+            <input type="submit" value="Iniciar Sesión" id="registro">
+        </form>
+    </div>
+    <!--Spam innecesario-->
+    <aside>
+        <h3 class="marcellus-sc-regular">¡Únete a nuestro curso de restauración!</h3><br>
+        <h3 class="marcellus-sc-regular">Y disfruta de un 10% de descuento</h3>
+        <!-- Hacer que el 10% sea una variable JS para poderlo cambiar en todas las páginas a la vez -->
+        <a href="./course_register.html"><button class="marcellus-sc-regular">¡Únete aquí!</button></a>
+    </aside>
+    <!--Fin del spam-->
+    <!-- Footer -->
+    <footer>
+        <div class="columnas-footer">
+            <div class="footer-section">
+                <h3 class="marcellus-sc-regular">CONTACTO</h3>
+                <a href="mailto:dicomo@gmail.com" class="libre-baskerville-regular">dicomo@gmail.com</a>
+                <a href="./contatwithUs.html" class="libre-baskerville-regular">Centro de contacto</a>
+            </div>
+            <div class="footer-section">
+                <h3 class="marcellus-sc-regular">¿QUIÉNES SOMOS?</h3>
+                <a href="./aboutUs.html" class="libre-baskerville-regular">¿Quiénes somos?</a>
+                <a href="./legalNotice.html" class="libre-baskerville-regular">Aviso Legal</a>
+                <a href="./affiliates.html" class="libre-baskerville-regular">Afiliados</a>
+                <a href="./rss.html" class="libre-baskerville-regular">RSS</a>
+                <a href="./erp-crm.html" class="libre-baskerville-regular">ERP/CRM</a>
+            </div>
+            <div class="footer-section">
+                <h3 class="marcellus-sc-regular">COMUNIDAD</h3>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/"><img src="../img/simbolos/bxl-facebook.svg"
+                            alt="Logo Facebook"></a>
+                    <a href="https://www.facebook.com/" class="nombre-red-social libre-baskerville-regular">Facebook</a>
+                </div>
+                <div class="red-social">
+                    <a href="https://www.instagram.com/"><img src="../img/simbolos/bxl-instagram.svg"
+                            alt="Logo Instagram"></a>
+                    <a href="https://www.instagram.com/"
+                        class="nombre-red-social libre-baskerville-regular">Instagram</a>
+                </div>
+                <div class="red-social">
+                    <a href="https://wa.me//+34609336150"><img src="../img/simbolos/nimbus--whatsapp.svg"
+                            alt="Logo WhatsApp" width="19px"></a>
+                    <a href="https://wa.me//+34609336150"
+                        class="nombre-red-social libre-baskerville-regular">WhatsApp</a>
+                </div>
 
-        <aside>
-            <h3>¡Únete a nuestro curso de restauración!</h3><br>
-            <h3>Y disfruta de un 10% de descuento</h3>
-            <!-- Hacer que el 10% sea una variable JS para poderlo cambiar en todas las páginas a la vez -->
-            <button>¡Únete aquí!</button>
-        </aside>
-        <!--Fin del spam-->
-        <!-- Footer -->
-        <footer>
-            <div class="columnas-footer">
-                <div class="footer-section">
-                    <h3>CONTACTO</h3>
-                    <a href="mailto:dicomo@gmail.com">dicomo@gmail.com</a>
-                    <a href="./contatwithUs.html">Centro de contacto</a>
-                </div>
-                <div class="footer-section">
-                    <h3>¿QUIÉNES SOMOS?</h3>
-                    <a href="./aboutUs.html">¿Quiénes somos?</a>
-                    <a href="./legalNotice.html">Aviso Legal</a>
-                    <a href="./affiliates.html">Afiliados</a>
-                    <a href="./rss.html">RSS</a>
-                    <a href="./erp-crm.html">ERP/CRM</a>
-                </div>
-                <div class="footer-section">
-                    <h3>COMUNIDAD</h3>
-                    <div class="red-social">
-                        <a href="https://www.facebook.com/"><img src="../img/simbolos/bxl-facebook.svg"
-                                alt="Logo Facebook"></a>
-                        <a href="https://www.facebook.com/" class="nombre-red-social">Facebook</a>
-                    </div>
-                    <div class="red-social">
-                        <a href="https://www.instagram.com/"><img src="../img/simbolos/bxl-instagram.svg"
-                                alt="Logo Instagram"></a>
-                        <a href="https://www.instagram.com/" class="nombre-red-social">Instagram</a>
-                    </div>
-                    <div class="red-social">
-                        <a href="https://wa.me//+34609336150"><img src="../img/simbolos/nimbus--whatsapp.svg"
-                                alt="Logo WhatsApp" width="19px"></a>
-                        <a href="https://wa.me//+34609336150" class="nombre-red-social">WhatsApp</a>
-                    </div>
-        
-                </div>
             </div>
-            <div id="titulo-metodos-pago">
-                <h3>MÉTODOS DE PAGO</h3>
-            </div>
-            <div id="payMethodContainer">
-                <img src="../img/simbolos/LogoApplePay.png" alt="Logo ApplePay" class="payments-methods">
-                <img src="../img/simbolos/LogoGooglePay.png" alt="Logo GooglePay" class="payments-methods">
-                <img src="../img/simbolos/Mastercard-logo.svg.png" alt="Logo MasterCard" class="payments-methods">
-                <img src="../img/simbolos/LogoPayPal.png" alt="Logo PayPal" class="payments-methods">
-                <img src="../img/simbolos/LogoVisa.png" alt="Logo VISA" class="payments-methods">
-            </div>
-            <p id="legal" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a
-                    href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank"
-                    rel="license noopener noreferrer">Dicomo is licensed under CC BY-NC 4.0<img
-                        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                        src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
-                        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                        src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
-                        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                        src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
-        </footer>
-    </body>
-    </html>
+        </div>
+        <div id="titulo-metodos-pago">
+            <h3 class="marcellus-sc-regular">MÉTODOS DE PAGO</h3>
+        </div>
+        <div id="payMethodContainer">
+            <img src="../img/simbolos/LogoApplePay.png" alt="Logo ApplePay" class="payments-methods">
+            <img src="../img/simbolos/LogoGooglePay.png" alt="Logo GooglePay" class="payments-methods">
+            <img src="../img/simbolos/Mastercard-logo.svg.png" alt="Logo MasterCard" class="payments-methods">
+            <img src="../img/simbolos/LogoPayPal.png" alt="Logo PayPal" class="payments-methods">
+            <img src="../img/simbolos/LogoVisa.png" alt="Logo VISA" class="payments-methods">
+        </div>
+        <p id="legal" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a
+                href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer">Dicomo is licensed under CC BY-NC 4.0<img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+</body>
+
+</html>

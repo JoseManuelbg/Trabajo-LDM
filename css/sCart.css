@@ -1,37 +1,40 @@
-.main{
+.main {
     background-color: #fcf8f3;
     height: 150vh;
     display: flex;
-  justify-content: center;
+    justify-content: center;
     align-items: center;
 
 }
 
-.buying-zone{
+.buying-zone {
     position: relative;
     width: 90%;
     height: 80%;
     display: flex;
     margin-bottom: 50px;
-  justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
 
 }
-.product-container{
+
+.product-container {
     height: 100%;
     width: 1000px;
     background-color: #ddd3cc;
     overflow-y: scroll;
     scrollbar-width: thin;
-    
+    border-radius: 5px;
 }
-.price-container{
+
+.price-container {
     height: 800px;
     width: 500px;
     background-color: #ddd3cc;
-    align-self:normal;
+    align-self: normal;
 }
-.products{
+
+.products {
     width: 100%;
     height: 300px;
     display: flex;
@@ -39,57 +42,62 @@
     overflow: hidden;
     border-bottom: 1px solid rgb(0, 0, 0, 0.2);
     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
-    }
-.products > img{
+}
+
+.products>img {
     height: 94%;
     width: auto;
     padding: 10px;
-    
+
 }
-.descrip{
+
+.descrip {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: space-between;
     padding: 20px 20px 0px 20px;
-    
+
 }
 
 
-.descrip > #quantity{
+.descrip>#quantity {
     height: 50px;
     border: 1px solid black;
 
 }
 
 /*Lo de pagar*/
-.price-container{
-    
+.price-container {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     border: 1px solid black;
 }
-.promo-code{
+
+.promo-code {
     border: 1px solid black;
     margin-bottom: 200px;
-    
-    
+
+
 }
 
-.promo-code > form > input{
+.promo-code>form>input {
     background-color: white;
     border: 1px solid;
     height: 70px;
     width: 400px;
 }
-.promo-code > form > button{
+
+.promo-code>form>button {
     background-color: white;
     border: 1px solid;
     height: 70px;
 
 }
+
 .priceThings {
     width: 100%;
     height: 30%;
@@ -97,12 +105,12 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    
+
 }
 
 
 
-.priceThings > div{
+.priceThings>div {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -112,10 +120,10 @@
 .priceThings p:nth-of-type(2),
 .priceThings p:nth-of-type(5) {
     font-weight: bold;
-   
+
 }
 
-#pay{
+#pay {
     margin-bottom: 100px;
     background-color: transparent;
     width: 60%;
@@ -154,4 +162,9 @@
 .price-counters>button {
     width: 10%;
     background-color: #fff;
+}
+
+.nombre-producto {
+    font-size: 18px;
+    font-weight: bold;
 }
