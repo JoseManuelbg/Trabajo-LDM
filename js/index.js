@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", function () {
 // Fin alertas
 
 const initSlider = (carouselContainer) => {
-    const imageList = carouselContainer.querySelector(" .image-list");
+    const imageList = carouselContainer.querySelector(".image-list");
     const slideButtons = carouselContainer.querySelectorAll(".slide-button");
     const sliderScrollbar = carouselContainer.querySelector(".slider-scrollbar");
     const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
@@ -110,5 +110,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const carousels = document.querySelectorAll(".carouselP");
     carousels.forEach(carousel => {
         initSlider(carousel);
+    });
+
+    window.addEventListener("scroll", function () {
+        document.querySelector("header").style.top = 0;      
     });
 });

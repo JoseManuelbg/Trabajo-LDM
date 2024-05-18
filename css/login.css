@@ -1,27 +1,27 @@
-
 body {
     height: 100vh;
     align-items: center;
     justify-content: center;
     background-color: #fcf8f3;
-    
+
 }
 
 .formulario {
     width: 400px;
     padding: 20px;
     margin: 20px;
-    background-color:  #ddd3cc;
+    background-color: #ede7e2;
     text-align: center;
+    border: 2px solid #9A8263;
     border-radius: 15px;
-    box-shadow:10px 10px 5px  #ede7e2;
+    box-shadow: 0px 9px 33px -12px rgba(0,0,0,0.65);
 }
 
-.formulario > input:hover{
-    background-color: #ede7e2;  
+.formulario>input:hover {
+    background-color: #ede7e2;
 }
 
-.container{
+.container {
     width: 100%;
     display: grid;
     grid-auto-flow: column;
@@ -30,24 +30,27 @@ body {
 }
 
 
-#registro{
-background-color: white;
-border-radius: 10px;
-margin-top: 20px;
-padding: 10px;
-color: black;
+#registro {
+    background-color: #ddd3cc;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+    transition: all 500ms;
+    width: 250px;
+    border: solid thin #9A8263;
 }
 
-
-
-
+#registro:hover {
+    transform: scale(1.1);
+}
 
 .cuenta {
     padding: 2rem 0;
-
 }
 
-.formulario input {
+.formulario input:not([type="submit"]) {
 
     width: 70%;
     display: block;
@@ -55,7 +58,7 @@ color: black;
     margin-bottom: 2rem;
     background-color: transparent;
     border: none;
-    border-bottom: white thin solid;
+    border-bottom: #dfcbbd thin solid;
     text-align: center;
     outline: none;
     padding: .2rem 0;

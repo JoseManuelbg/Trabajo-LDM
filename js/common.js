@@ -5,6 +5,11 @@ window.addEventListener("DOMContentLoaded", function(){
         document.getElementById("google_translate_element").classList.toggle("active");
         document.querySelector("body").classList.toggle("active");
         document.getElementById("logo").classList.toggle("animacion");
+        setTimeout(() => {
+            document.getElementById("sidebar").style.marginTop = 0;
+
+            document.querySelector("header").style.position = "sticky";
+        }, 0);
         document.getElementById("mostrar-subclases1").addEventListener("click", function(){
             document.getElementById("mostrar-subclases1").classList.toggle("animacion");
             document.querySelectorAll(".subclase-sidebar1").forEach(element => {

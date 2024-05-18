@@ -1,6 +1,10 @@
 /*Estilos generales*/
-
-
+header {
+    position: fixed;
+    top: -73px;
+    transition: all 700ms ease-in-out;
+    z-index: 1500;
+}
 button{ /*Afecta a todos los botones del index*/
     background-color: #ddd3cc;
     border-radius: 20px;
@@ -8,6 +12,7 @@ button{ /*Afecta a todos los botones del index*/
     width: 200px;
     cursor: pointer;
 }
+
 /*Fin de estilos generales*/
 
 .slider-css {
@@ -45,8 +50,8 @@ button{ /*Afecta a todos los botones del index*/
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    backdrop-filter: blur(10px);
     border-radius: 20px;
+    z-index: 100;
 }
 /*Estilos especificos dentro del ID titulo para los diferentes titulos*/
 #titleC > h1{
@@ -70,7 +75,9 @@ button{ /*Afecta a todos los botones del index*/
     transform: scale(1.2);
 }
 
-
+#slider-inicio > li > img{
+   filter: blur(3.5px);
+}
 
 
 /*Por pulir*/
