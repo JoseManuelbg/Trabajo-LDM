@@ -79,3 +79,32 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #fff5e7;
 }
+
+
+.error-mensaje {
+    font-family: 'Libre Baskerville', serif;
+    color:#222;
+    font-size: 12px;
+    text-align: center;
+}
+    
+.error-mensaje ul {
+    padding: 0;
+    list-style: none;
+}
+.error-mensaje li {
+    margin-bottom: 5px;
+}
+    
+#errores{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #9A8263;
+    display: none;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: red;
+    float: right;
+}
