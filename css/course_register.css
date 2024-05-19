@@ -40,15 +40,27 @@ input[type="date"] {
     background-color: #fcf8f3;
 }
 
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
 input[type="checkbox"] {
-    width: 70%;
     background-color: #ddd3cc;
     color: rgb(0, 0, 0);
-    margin-top: 10px;
-    margin-right: 10px;
     border: none;
-    display: inline-block;
+    display: block;
+    margin-right: 15px;
+    box-sizing: border-box;
+}
+
+.texto-checkbox {
+    display: block;
+    float: right;
     
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
@@ -61,6 +73,7 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+   
 }
 
 input[type="submit"]:hover {
