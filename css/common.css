@@ -294,7 +294,9 @@ aside > a > button:hover{
     font-weight: bold;
     cursor: pointer;
     transition: all 500ms;
+    font-family: 'Marcellus SC', serif;
 }
+
 
 .subclase-sidebar1, .subclase-sidebar2 {
     margin-left: 30px;
@@ -305,9 +307,17 @@ aside > a > button:hover{
     transition: all 1.5s ease;
 }
 
+.subclase-sidebar1 > a, .subclase-sidebar2 > a {
+    font-family: 'Libre Baskerville', serif;
+}
+
 .subclase-sidebar1.active-subclase, .subclase-sidebar2.active-subclase {
     opacity: 1;
     max-height: 20px;
+}
+
+.subclase-sidebar1.active-subclase:hover, .subclase-sidebar2.active-subclase:hover {
+    text-decoration: underline;
 }
 
 #mostrar-subclases1, #mostrar-subclases2 {
