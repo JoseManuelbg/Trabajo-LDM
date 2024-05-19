@@ -150,3 +150,12 @@ p.titulo, .precio{
     font-weight: 50;
     font-style: normal;
 }
+
+a{
+    text-decoration:none;
+    color: black;
+}
+
+a:hover{
+    color: black;
+}
