@@ -1,5 +1,5 @@
 body {
-    background-color: #fff5e7;
+    background-color: #fcf8f3;
 }
 
 #logo {
@@ -14,29 +14,33 @@ body {
     align-items: center;
     display: grid;
     padding: 40px 0px 10px 0px;
-    margin: 0px 30px 0px 30px;
+    margin: 0px 80px 0px 80px;
 }
 
 #titulo-pagina > h2 {
     width: fit-content;
+    font-size: 32px;
 }
 
 .informacion {
-    
+    display: grid;
+    place-items: center;
     width: 500px;
 }
 
 .formulario {
-    background-color: #ede7e2;
-    border: 1px solid #ddd3cc;
     width: 500px;
-    height: auto;
-    box-shadow: -3px 3px 5px #ddd3cc;
-    margin-bottom: 50px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ede7e2;
+    text-align: center;
+    border: 2px solid #9A8263;
+    border-radius: 15px;
+    box-shadow: 0px 9px 33px -12px rgba(0,0,0,0.65);
 } 
 
 section {
-    padding-top: 50px;
+    padding: 50px 0;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -46,28 +50,30 @@ section {
     }
 
 .contacto, .oficina {
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
     background-color: #ede7e2;
-    border: 1px solid #ddd3cc;
-    box-shadow: -3px 3px 5px #ddd3cc;
-    margin-bottom: 50px;
     text-align: center;
+    border: 2px solid #9A8263;
+    border-radius: 15px;
+    box-shadow: 0px 9px 33px -12px rgba(0,0,0,0.65);
+   
 }
+
+.contacto > h4, .oficina > h4 {
+    font-size: 20px;
+}
+
+.contacto > p, .contacto > a, .oficina > p {
+    font-size: 14px;
+} 
+
+
 
 .contacto > a {
     text-decoration: none;
     color: black;
-}
-
-#formulario {
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-    box-sizing: border-box;
-    margin-bottom: 10%;
-    margin: auto;
-    text-align: center;
-    border-radius: 15px;
-
 }
 
 .fragmento{
@@ -78,15 +84,15 @@ section {
     width: 100%;
 }
 
-input{
-    
-    width: 300px;
+#formulario input:not([type="submit"]) {
+
+    width: 70%;
     display: block;
     margin: auto;
     margin-bottom: 2rem;
     background-color: transparent;
     border: none;
-    border-bottom:white 1px solid;
+    border-bottom: #dfcbbd thin solid;
     text-align: center;
     outline: none;
     padding: .2rem 0;
@@ -95,85 +101,50 @@ input{
 
 }
 
-#formulario > label {
-    text-align: right;
-    padding: 100%;
-}
-/* text-align: left;
-    padding: 10px 0 0 0;
-*/
-#nombre > input:not(input[type="submit"]), #apellido > input:not(input[type="submit"]),
-#email > input:not(input[type="submit"]), #telefono > input:not(input[type="submit"]),
-#asunto > input:not(input[type="submit"]) {
-    height: 30px;
-    padding: 0;
-    font-size: 20px;
-}
-
-#nombre > input:hover, #apellido > input:hover,
-#email > input:hover, #telefono > input:hover,
-#nombre > input:focus, #apellido > input:focus,
-#email > input:focus, #telefono > input:focus,
-#asunto > input:hover, #asunto > input:focus {
-    background-color: #ddd3cc;
-    height: 30px;
-}
-
-
-#apellido, #telefono {
-    margin-right: 10px;
-    margin-top: 10px;
-}
-
-#comentario {
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
 #comentario > textarea {
     background-color: #ddd3cc;
     height: 60px;
     width: 80%;
-
     border-radius: 5px;
     resize: none;
     align-items: center;
-
 }
 
-#enviar {
-    align-items: center;
 
-}
 #enviar > input[type="submit"] {
     border: 1px solid #ddd3cc;
     text-align: center;
     border-radius: 5px;
+    padding: 5px 70px;
 }
 
 #enviar > input[type="submit"]:hover {
     background-color: #ddd3cc;
+    cursor: pointer;
 }
 
-.error-message {
-    color: #ff0000;
+.error-mensaje {
+    font-family: 'Libre Baskerville', serif;
+    color:#222;
     font-size: 12px;
-    text-align: left;
+    text-align: center;
 }
-
-.error-message ul {
+    
+.error-mensaje ul {
     padding: 0;
     list-style: none;
 }
-.error-message li {
+.error-mensaje li {
     margin-bottom: 5px;
 }
-
+    
 #errores{
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid red;
+    border: 2px solid #9A8263;
     display: none;
     margin-bottom: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
 }

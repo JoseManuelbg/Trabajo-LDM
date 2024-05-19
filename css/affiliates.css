@@ -12,15 +12,24 @@ article > h1 {
 }
 
 article {
-    width: 800px;
+  
     margin: 0 auto;
-    background-color: #ddd3cc;
+    
     height: 600px;
 }
 
 /* Logos */
 
 .contenedor-logos {
-    width: fit-content;
-    margin: 50px auto;
+    background-color: #ddd3cc;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 100px;
+    margin: 100px auto;
+    place-items: center;
+    border: 2px solid #9A8263;
+    border-radius: 15px;
+    box-shadow: 0px 9px 33px -12px rgba(0,0,0,0.65);
 }
+
+
