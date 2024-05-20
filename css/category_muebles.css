@@ -58,7 +58,7 @@ body {
     display: block;
 }
 
-.pieDeFoto:hover, .contenido > .titulo:hover {
+.pieDeFoto:hover, .contenido > a >.titulo:hover {
     text-decoration: underline;
     cursor: pointer;
 }
