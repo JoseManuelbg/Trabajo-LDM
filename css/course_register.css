@@ -9,17 +9,20 @@ form {
     
     background-color: #ede7e2;
     max-width: 400px;
-    margin: 20px auto;
+    margin: 35px auto;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: -3px 3px 5px #ddd3cc;
-    border: 1px solid #ddd3cc;
+    border: 2px solid #9A8263;
+    border-radius: 15px;
+    box-shadow: 0px 9px 33px -12px rgba(0,0,0,0.65);
 }
 
-h2 {
-    padding-top: 10px;
+.titulo-pagina {
+    padding-top: 25px;
+    padding-bottom: 10px;
     text-align: center;
     color: #333;
+    border-bottom: 1px solid black;
+    margin: 0 150px 0 150px;
 }
 
 label {
