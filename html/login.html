@@ -94,12 +94,17 @@
     <div class="container">
         <form class="formulario" action="../index.html">
             <img src="../img/favicon.png" id="logo">
+
             <h2 class="cuenta marcellus-sc-regular">Inicia Sesión</h2>
+
             <label class="libre-baskerville-regular">Email:</label>
-            <input type="email">
+            <input type="text" id="email" class="email">
+
             <label class="libre-baskerville-regular">Contraseña:</label>
-            <input type="password">
+            <input type="password" id="contrasena" class="contrasena">
+
             <input type="submit" value="Iniciar Sesión" id="registro">
+            <div id="errores" class="error-mensaje"></div>
         </form>
     </div>
     <!--Spam innecesario-->
