@@ -23,7 +23,13 @@ body {
     transition: all 700ms;
 }
 
-.fila-galeria > div {
+/* Ajustar el hover para las imágenes */
+
+.fila-galeria > div a img{
+    transition: transform 0.7s;
+}
+
+.fila-galeria > div:hover {
     transform: scale(1.1);
 }
 
