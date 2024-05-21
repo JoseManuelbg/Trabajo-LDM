@@ -1,23 +1,40 @@
 .contenido{
   text-align: justify;
   padding: 0 100px 0 100px;
+  display: block;
   
 }
 
 .descripcion{
-  margin-bottom: 50px;
-  float: right;
-
-}
-
-.titulo{
-  margin-top: 50px;
-  margin-left: 5%;
-  border-bottom: 1px solid black;
-
+  width: 100%;
+  border: 2px solid #9A8263;
+  border-radius: 15px;
+  box-shadow: 0px 9px 33px -12px rgba(0,0,0,0.65);
+  padding: 20px;
+  background-color: #ddd3cc;
 }
 
 .numero{
+  margin-right: 10px;
+  font-size: 50px;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #9A8263;
+  border-radius: 15px;
+  box-shadow: 0px 9px 33px -12px rgba(0,0,0,0.65);
+  padding: 10px;
+  background-color: #ddd3cc;
+}
+
+.unidad{
+  display: flex;
+  align-items: center;
+  margin: 20px 0 60px 0;
+}
+
+
+*.numero{
   border-radius: 100%;
   border:1px black solid;
   height: 50px;
@@ -29,16 +46,56 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
 }
+
+
 .principal{
   text-align: center;
   margin-top: 20px;
-  border-bottom: 2px black solid;
+ 
   margin-left: 10%;
   margin-right: 10%;
 }
 
+
+.tabla {
+  padding: 20px 100px;
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 2px solid #9A8263;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  background-color: #ddd3cc;
+  box-shadow: 0px 9px 33px -12px rgba(0, 0, 0, 0.65);
+}
+
+table th {
+  background-color: #9A8263;
+  color: white;
+  font-family: 'Marcellus SC', serif;
+}
+
+table td {
+  background-color: #fff;
+}
+
+table tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+table tr:hover td {
+  background-color: #e0e0e0;
+}
+/*
 .tabla{
   margin-left: 37%;
   margin-right: 40%;
@@ -66,3 +123,4 @@ tr:nth-child(odd) {
 tr:hover {
   background-color: #ddd; 
 }
+*/

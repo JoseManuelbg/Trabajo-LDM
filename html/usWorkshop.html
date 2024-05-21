@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacta con nosotros</title>
     <!--Favicon-->
+    <!--Scripts-->
+    <!-- Scripts -->
+    <script src="../js/common.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <!-- Hojas de estilo -->
     <link rel="stylesheet" href="../css/common.css">
@@ -26,108 +31,139 @@
     <head> 
 </head>
 <body>
-<!--Header y navBar-->
-<header>
-    <img src="../img/simbolos/Menu_hamburguesa.png" alt="Simbolo menú" class="icon">
-    <a href="../index.html"><h1 class="marcellus-sc-regular">DiComo</h1></a>
-    <div id="rightheader">
-        <div id="searchBar">
-        <input type="text">
-        <img src="../img/simbolos/Lupa_busqueda.png" alt="Simbolo lupa" class="icon">
+    <!--Header y navBar-->
+    <header>
+        <img src="../img/simbolos/Menu_hamburguesa.png" alt="Simbolo menú" class="icon" id="abrir-menu">
+        <a href="../index.html">
+            <h1 class="marcellus-sc-regular notranslate">DiComo</h1>
+        </a>
+        <div id="rightheader">
+            <div id="searchBar">
+                <input type="text">
+                <a href="./categories.html"><img src="../img/simbolos/Lupa_busqueda.png" alt="Simbolo lupa"
+                        class="icon"></a>
+            </div>
+            <a href="./login.html"><img src="../img/simbolos/User.png" alt="Simbolo usuario" class="icon"></a>
+            <a href="./sCart.html"><img src="../img/simbolos/Carrito.png" alt="Simbolo carrito de compra"
+                    class="icon"></a>
         </div>
-        <a href="./login.html"><img src="../img/simbolos/User.png" alt="Simbolo usuario" class="icon"></a>
-        <a href="./sCart.html"><img src="../img/simbolos/Carrito.png" alt="Simbolo carrito de compra" class="icon"></a>
-    </div>
+    </header>
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <img src="../img/favicon.png" alt="" id="logo">
+            </li>
+            <li>
+                <div class="categoria-sidebar">
+                    <a href="./categories.html" class="titulo-sidebar">Nuestros muebles</a>
+                    <img src="../img/simbolos/mdi--plus.png" alt="" class="cross" id="mostrar-subclases1">
+                </div>
+                <ul>
+                    <li class="subclase-sidebar1"><a href="./category_chair.html">Sillas</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_table.html">Mesas</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_sofa.html">Sofás</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_aparadores.html">Aparadores</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_lamparas.html">Lámparas</a></li>
+                    <li class="subclase-sidebar1"><a href="./category_taburetes.html">Taburetes</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="categoria-sidebar">
+                    <a href="./restauracion.html" class="titulo-sidebar">Restauración</a>
+                    <img src="../img/simbolos/mdi--plus.png" alt="" id="mostrar-subclases2">
+                </div>
+                <ul>
+                    <li class="subclase-sidebar2"><a href="./usWorkshop.html">Nuestros talleres</a></li>
+                    <li class="subclase-sidebar2"><a href="./course_register.html">Inscríbete</a></li>
+                </ul>
+            </li>
+            <li><a href="./aboutUs.html" class="titulo-sidebar">Sobre nosotros</a></li>
+        </ul>
+        <img src="../img/sidebar/461-menu-sorteo-Mayo_es_cnqb8n.webp" alt="" id="imagen-sorteo">
+        <div id="google_translate_element" class="google"></div>
+    </nav>
+<div class="principal"><h1  class="marcellus-sc-regular">Módulos del curso</h1></div>
 
-</header>
-
-<div class="principal"><h1>Modulos del curso</h1></div>
-<div class="contenido">
-    <div class="unidad">
-        <div class="numero">
-            <p>1</p>
-        </div>
-        <div class="titulo">
-            <h2>Madera: Tipos y Tratamiento.</h2>
+    <div class="contenido">
+        <div class="unidad">
+          <div class="numero">
+            <p class="marcellus-sc-regular">1</p>
         </div>
         <div class="descripcion">
-            <p>En este completo apartado del curso, explorarás la fascinante variedad de tipos de madera utilizados 
+            <h2 class="marcellus-sc-regular">Madera: Tipos y Tratamiento.</h2>
+            <p class="libre-baskerville-regular">En este completo apartado del curso, explorarás la fascinante variedad de tipos de madera utilizados 
                 en muebles y las características únicas de cada uno. Desde las maderas comunes hasta las más exóticas, aprenderás a identificarlas y comprender sus propiedades para seleccionar la mejor opción para tus proyectos de restauración. Además, abordaremos un desafío común en la restauración de muebles: la carcoma. Descubrirás los signos de infestación de carcoma y aprenderás sobre los diferentes métodos y tratamientos disponibles para eliminarla y prevenirla. Con este conocimiento,
                 estarás preparado para trabajar con cualquier tipo de madera y garantizar la integridad y longevidad de tus preciosas piezas restauradas.</p>
         </div>
     </div>
     <div class="unidad">
+
         <div class="numero">
-            <p>2</p>
-        </div>
-        <div class="titulo">
-            <h2>Decapantes: Decapar Madera.</h2>
+            <p class="marcellus-sc-regular">2</p>
         </div>
         <div class="descripcion">
-            <p>En este segmento del curso, te sumergirás en el fascinante mundo de los decapantes y su aplicación en la restauración de muebles de madera.
+            <h2 class="marcellus-sc-regular">Decapantes: Decapar Madera.</h2>
+            <p class="libre-baskerville-regular">En este segmento del curso, te sumergirás en el fascinante mundo de los decapantes y su aplicación en la restauración de muebles de madera.
                 Descubrirás cómo los decapantes pueden ser una herramienta poderosa para eliminar pinturas, barnices y acabados antiguos, revelando la belleza natural de la madera debajo. Aprenderás sobre los diferentes tipos de decapantes disponibles y cómo elegir el más adecuado para cada proyecto. Además, explorarás técnicas seguras y eficaces para aplicar y retirar decapantes, evitando daños en la madera y maximizando los resultados. Con este conocimiento, estarás preparado para abordar
                 cualquier desafío de decapado con confianza y precisión, transformando tus muebles con resultados impresionantes.</p>
         </div>
-    </div>
-    <div class="unidad">
-        <div class="numero">
-            <p>3</p>
         </div>
-        <div class="titulo">
-            <h2>Lijado e Imprimación de la Madera.</h2>
+        <div class="unidad">
+
+        <div class="numero">
+            <p class="marcellus-sc-regular">3</p>
         </div>
         <div class="descripcion">
-           
-            <p>En este importante apartado del curso, nos sumergiremos en el proceso esencial de preparación de la madera para su restauración.
+            <h2 class="marcellus-sc-regular">Lijado e Imprimación de la Madera.</h2>
+            <p class="libre-baskerville-regular">En este importante apartado del curso, nos sumergiremos en el proceso esencial de preparación de la madera para su restauración.
                 Aprenderás sobre los diferentes tipos de lijas y cómo seleccionar la adecuada según el tipo de madera y el acabado deseado. Desde lijas gruesas para eliminar barnices antiguos hasta lijas finas para un acabado suave y uniforme, dominarás las técnicas de lijado para obtener resultados profesionales. Además, exploraremos la importancia de la limpieza de la superficie y la aplicación de imprimación para garantizar una base sólida para tu proyecto de restauración. Con instrucciones detalladas y consejos prácticos,
                 te guiaremos paso a paso para que puedas preparar tus muebles correctamente y obtener resultados duraderos y de calidad.</p>
         </div>
-    </div>
-    <div class="unidad">
-        <div class="numero">
-            <p>4</p>
         </div>
-        <div class="titulo">
-            <h2>Pintura: Técnicas y Aplicaciones.</h2>
+        <div class="unidad">
+
+        <div class="numero">
+            <p class="marcellus-sc-regular">4</p>
         </div>
         <div class="descripcion">
-            <p>En este emocionante apartado del curso, explorarás el maravilloso mundo de la pintura creativa aplicada a la restauración de muebles.
+            <h2 class="marcellus-sc-regular">Pintura: Técnicas y Aplicaciones.</h2>
+            <p class="libre-baskerville-regular">En este emocionante apartado del curso, explorarás el maravilloso mundo de la pintura creativa aplicada a la restauración de muebles.
                 Desde pintura acrílica al agua hasta pintura a la tiza, descubrirás una amplia gama de técnicas y aplicaciones para transformar tus muebles con estilo y personalidad. Aprenderás a dominar técnicas de pintado avanzadas, como la imitación de texturas, el marmoleado, las patinas y el envejecido, para crear efectos visualmente impactantes y únicos. Con instrucciones detalladas y prácticas, te guiaremos paso a paso para que puedas aplicar estas técnicas con confianza y precisión,
                 elevando tus proyectos de restauración a un nivel completamente nuevo de creatividad y expresión artística.</p>
         </div>
-    </div>
-    <div class="unidad">
-        <div class="numero">
-            <p>5</p>
         </div>
-        <div class="titulo">
-            <h2>Ceras y Encerado de la Madera</h2>
+
+        <div class="unidad">
+
+        <div class="numero">
+            <p class="marcellus-sc-regular">5</p>
         </div>
         <div class="descripcion">
             
-            <p>En este crucial apartado del curso, explorarás el arte del encerado de la madera y el uso de ceras para realzar y proteger tus proyectos de restauración.
+            <h2 class="marcellus-sc-regular">Ceras y Encerado de la Madera</h2>
+            <p class="libre-baskerville-regular">En este crucial apartado del curso, explorarás el arte del encerado de la madera y el uso de ceras para realzar y proteger tus proyectos de restauración.
                 Descubrirás cómo las ceras pueden resaltar la belleza natural de la madera,
                 proporcionando un acabado suave y satinado que mejora su apariencia y durabilidad. Aprenderás sobre los diferentes tipos de ceras disponibles, desde ceras de abeja hasta ceras con pigmentos, y cómo elegir la más adecuada para tus necesidades. Además, te sumergirás en las técnicas de aplicación de cera, desde el frotado a mano hasta la aplicación con brocha, para lograr resultados profesionales y duraderos. Con este conocimiento, estarás equipado para dar el toque final perfecto a tus muebles restaurados, resaltando su belleza y protegiéndolos para que perduren por muchos años.
             </p>
         </div>
-    </div>
-    <div class="unidad">
+        </div>
+
+        <div class="unidad">
+
         <div class="numero">
-            <p>6</p>
+            <p class="marcellus-sc-regular">6</p>
         </div>
-        <div class="titulo">
-            <h2>Cuidado y Mantenimiento</h2>
-        </div>
-        <div class="descripcion">
-            
-            <p>En este último y crucial apartado del curso, nos enfocaremos en el cuidado y mantenimiento de tus preciosas creaciones restauradas.
+        <div class="descripcion">   
+            <h2 class="marcellus-sc-regular">Cuidado y Mantenimiento</h2>
+            <p class="libre-baskerville-regular">En este último y crucial apartado del curso, nos enfocaremos en el cuidado y mantenimiento de tus preciosas creaciones restauradas.
                 Aprenderás técnicas y consejos prácticos para preservar la belleza y la integridad de tus muebles a lo largo del tiempo.
                 Exploraremos cómo limpiar y proteger adecuadamente las superficies de madera para evitar daños y mantener su lustre original.
                 Además, te proporcionaremos estrategias efectivas para abordar problemas comunes como arañazos,
                 manchas y decoloraciones, para que puedas mantener tus muebles en condiciones óptimas.</p>
         </div>
+        </div>
     </div>
-</div>
 
     
 <div class="tabla">
@@ -188,43 +224,62 @@
 </div>
 
 
+
 <!-- Footer -->
 <footer>
     <div class="columnas-footer">
-    <div class="footer-section">
-        <h3>CONTACTO</h3>
-        <a href="mailto:dicomo@gmail.com">dicomo@gmail.com</a>
-    </div>
-    <div class="footer-section">
-        <h3>¿QUIÉNES SOMOS?</h3>
-        <a href="./aboutUs.html">¿Quiénes somos?</a>
-        <a href="./legalNotice.html">Aviso Legal</a>
-        <a href="./affiliates.html">Afiliados</a>
-    </div>        
-    <div class="footer-section">
-        <h3>COMUNIDAD</h3>
-        <div class="red-social">
-            <a href="https://www.facebook.com/"><img src="../img/simbolos/bxl-facebook.svg" alt="Logo Facebook"></a>
-            <a href="https://www.facebook.com/" class="nombre-red-social">Facebook</a>
+        <div class="footer-section">
+            <h3 class="marcellus-sc-regular">CONTACTO</h3>
+            <a href="mailto:dicomo@gmail.com" class="libre-baskerville-regular">dicomo@gmail.com</a>
+            <a href="./contatwithUs.html" class="libre-baskerville-regular">Centro de contacto</a>
         </div>
-        <div class="red-social">
-            <a href="https://www.instagram.com/"><img src="../img/simbolos/bxl-instagram.svg" alt="Logo Instagram"></a>
-            <a href="" class="nombre-red-social">Instagram</a>
+        <div class="footer-section">
+            <h3 class="marcellus-sc-regular">¿QUIÉNES SOMOS?</h3>
+            <a href="./aboutUs.html" class="libre-baskerville-regular">¿Quiénes somos?</a>
+            <a href="./legalNotice.html" class="libre-baskerville-regular">Aviso Legal</a>
+            <a href="./affiliates.html" class="libre-baskerville-regular">Afiliados</a>
+            <a href="./rss.html" class="libre-baskerville-regular">RSS</a>
+            <a href="./erp-crm.html" class="libre-baskerville-regular">ERP/CRM</a>
         </div>
-    
-    </div>
+        <div class="footer-section">
+            <h3 class="marcellus-sc-regular">COMUNIDAD</h3>
+            <div class="red-social">
+                <a href="https://www.facebook.com/"><img src="../img/simbolos/bxl-facebook.svg"
+                        alt="Logo Facebook"></a>
+                <a href="https://www.facebook.com/" class="nombre-red-social libre-baskerville-regular">Facebook</a>
+            </div>
+            <div class="red-social">
+                <a href="https://www.instagram.com/"><img src="../img/simbolos/bxl-instagram.svg"
+                        alt="Logo Instagram"></a>
+                <a href="https://www.instagram.com/" class="nombre-red-social libre-baskerville-regular">Instagram</a>
+            </div>
+            <div class="red-social">
+                <a href="https://wa.me//+34609336150"><img src="../img/simbolos/nimbus--whatsapp.svg"
+                        alt="Logo WhatsApp" width="19px"></a>
+                <a href="https://wa.me//+34609336150" class="nombre-red-social libre-baskerville-regular">WhatsApp</a>
+            </div>
+
+        </div>
     </div>
     <div id="titulo-metodos-pago">
-    <h3>MÉTODOS DE PAGO</h3>
+        <h3 class="marcellus-sc-regular">MÉTODOS DE PAGO</h3>
     </div>
     <div id="payMethodContainer">
         <img src="../img/simbolos/LogoApplePay.png" alt="Logo ApplePay" class="payments-methods">
         <img src="../img/simbolos/LogoGooglePay.png" alt="Logo GooglePay" class="payments-methods">
-        <img src="../img/simbolos/Mastercard-logo.svg.png" alt="Logo MasterCard" class="payments-methods"> 
+        <img src="../img/simbolos/Mastercard-logo.svg.png" alt="Logo MasterCard" class="payments-methods">
         <img src="../img/simbolos/LogoPayPal.png" alt="Logo PayPal" class="payments-methods">
         <img src="../img/simbolos/LogoVisa.png" alt="Logo VISA" class="payments-methods">
     </div>
-    <p id="legal">&copy; DICOMO · All rights reserved</p>
+    <p id="legal" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a
+            href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank"
+            rel="license noopener noreferrer">Dicomo is licensed under CC BY-NC 4.0<img
+                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+                style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
 </footer>
 
 </body>
