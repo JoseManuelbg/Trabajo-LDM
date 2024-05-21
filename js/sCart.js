@@ -42,6 +42,17 @@ window.addEventListener("DOMContentLoaded", function () {
             });
             totalElement.textContent = subtotal.toFixed(2) + "€";
         }
+
+
+        document.getElementById("pay").addEventListener("click", function () {
+            swal({
+                title: "Compra realizada correctamente",
+                text: "Se ha realizado la compra correctamente",
+                icon: "../img/favicon.png",
+                timer: 2000,
+                button: "Aceptar",
+            });
+        });
     });
 
     // Código de descuento
@@ -57,7 +68,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 
     function codigoDescuento() {
-        const discountCodes = ["JESUSAPRUEBAME", "VIVAFRANCO", "JOSEMANUELESELMEJOR"];
+        const discountCodes = ["JESUSAPRUEBAME", "VIVAFRANCO", "JOSEMANUELESELMEJOR", "DICOMO10", "DICOMEMELA"];
         const promoInput = document.getElementById("promo").value.toUpperCase();
         // Verificar si el código promocional coincide con alguna palabra clave
         if (discountCodes.includes(promoInput) && codeInput <1) {
