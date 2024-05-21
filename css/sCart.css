@@ -86,23 +86,47 @@
 
 
 .promo-code {
+
     border: 1px solid black;
     margin-bottom: 200px;
+    background-color: #ddd3cc;
+    border-radius: 20px;
+    padding: 10px;
+    width: 90%;
+    cursor: pointer;
+    font-size: 16px;
 
 
 }
 
 .promo-code>form>input {
-    background-color: white;
-    border: 1px solid;
     height: 70px;
-    width: 400px;
+    width: 80%;
+    float: left;
+    box-sizing: border-box;
 }
 
 .promo-code>form>button {
     background-color: white;
+    float: right;
     border: 1px solid;
+    width: 20%;
     height: 70px;
+    background-color: #ddd3cc;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.promo-code>form>button:hover{
+    background-color: #ede7e2;
+
+}
+
+#pay:hover{
+    background-color: #ede7e2;
 
 }
 
@@ -133,9 +157,12 @@
 
 #pay {
     margin-bottom: 100px;
-    background-color: transparent;
-    width: 60%;
-    height: 50px;
+    background-color: #ddd3cc;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 /*Contadores*/
