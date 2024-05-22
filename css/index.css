@@ -140,12 +140,14 @@ button{ /*Afecta a todos los botones del index*/
     margin-bottom: 30px;
     margin-left: 10px;
     font-size: 20px;
+    font-family: 'Marcellus SC';
 }
 
 #carousel2 > p{
     margin-left: 10px;
     margin-bottom: 30px;
     font-size: 20px;
+    font-family: 'Marcellus SC';
 }
 
 /* Estilos de las flechas */
